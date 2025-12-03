@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+ @media screen and (min-width: 750px) {
+        .navigation ul {
+             flex-wrap: nowrap;
+             }
+        }
+
+/* Navigationslinje */ 
+#navigation {
+  display: flex;
+  flex-direction: row; 
+  gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(255, 0, 0);
+}
+/*.Navigationslinje */
+
+.text-section {
+  width: 40%;                 /* Juster hvor meget plads teksten skal have */
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;           /* Juster billedstørrelse */
+  border-radius: 10px;
+}
+
+
