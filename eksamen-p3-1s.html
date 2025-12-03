@@ -1,31 +1,130 @@
-<!DOCTYPE html>
- <html lang="da">
-    <head>
-        <title>Præsentationsportfolio</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="stylesheet.css">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-    </head>
+<!DOCTYPE html>      <!--Her kan man se det er den nyste version HTML 5 -->
+<html lang="da">      <!--Alt skal skirve inde for HMTL for kunne formidles til en hjemmeside-->
+
+    <head>      <!--Overskift man IKKE kan se på siden skirves i en head -->
+        <title>Præsentationsportfolio</title>     <!--Min overskift man IKKE kan se på siden -->
+        <meta charset="utf-8">     <!--Dette skirve så man kan skirve Æ,Ø,Å -->
+        <link rel="stylesheet" href="stylesheet.css">      <!--Dette kobler HTML til CSS filen-->
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">     <!--Det er data, infomation om date - de griver info til browser men bruger / søgemaskine-->
+    </head>     <!--Overskift man IKKE kan se på siden skirves i en head -->
 
 
-         <body>
+    <body>      <!--Alt der skirve i body kan ses på hjemmesiden-->
 
-             <div id="navigation">
-                <h2><a class="nav-link" href="#ommig">Om mig</a></h2>         <!-- Du indsætter dit link i href'#...'' -->
-                <h2><a class="nav-link" href="#produkter">Produkter</a></h2> 
-                <h2><a class="nav-link" href="#værktøjer">Værktøjer</a></h2>
-                <h2><a class="nav-link" href="#kontakt">Kontakt info</a></h2>
-            </div>
+        <div id="navigation">     <!--Div giver sturktur, at opdle tingene og Menulinje id = unik -->
 
+                    <!-- Du indsætter dit link i href'#...'' -->
+             <h2><a class="nav-link" href="#ommig">Om mig</a></h2>      <!--Om mig-->
+             <h2><a class="nav-link" href="#produkter">Produkter</a></h2>       <!--Produkter-->
+             <h2><a class="nav-link" href="#værktøjer">Værktøjer</a></h2>       <!--Værktøjer-->
+             <h2><a class="nav-link" href="#kontakt">Kontakt info</a></h2>      <!--kontakt info-->
 
-            <img src="Profilbillede.png" width="500" height="300" alt="Profilbillede">
-            <img src="Profilbillede 2.jpg" width="200" height="300" alt="Profilbillede2">
-            <img src="Profilbillede-produkter.jpg" width="200" height="350" alt="profilbillede-produkter">
+        </div>     <!--Div giver sturktur, at opdle tingene -->
 
 
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
 
-    </body>
-</html>
+
+
+
+
+
+<!--Så der kommer billede på kasserne som bevæger sig-->
+
+<ol class="carousel__viewport">
+  <li class="carousel__slide">
+    <img class="slide-img" src="BILLEDE_URL_1" alt="Slide 1">
+    <div class="carousel__snapper"></div>
+  </li>
+
+  <li class="carousel__slide">
+    <img class="slide-img" src="BILLEDE_URL_2" alt="Slide 2">
+    <div class="carousel__snapper"></div>
+  </li>
+
+  <li class="carousel__slide">
+    <img class="slide-img" src="BILLEDE_URL_3" alt="Slide 3">
+    <div class="carousel__snapper"></div>
+  </li>
+
+  <li class="carousel__slide">
+    <img class="slide-img" src="BILLEDE_URL_4" alt="Slide 4">
+    <div class="carousel__snapper"></div>
+  </li>
+</ol>
+
+<!--Så der kommer billede på kasserne som bevæger sig-->
+
+
+
+
+    </body>      <!--Alt der skirve i body kan ses på hjemmesiden-->
+</html>      <!--Alt skal skirve inde for HMTL for kunne formidles til en hjemmeside-->
 
     
+
+
+
+
+
+           
