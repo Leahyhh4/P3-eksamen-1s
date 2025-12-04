@@ -1,53 +1,49 @@
 /* START Hvilken bagrundsfrave side skal have */ 
-
     body {
       background-color: rgb(255, 255, 255); /*Hvilken bagrundsfrave side skal have*/
     }
-
 /* SLUT Hvilken bagrundsfrave side skal have */ 
 
 
 
-
-
-
 /* START på Det gør siden responstiv - tilpasset til flere størlser skræme */ 
-
     @media screen and (min-width: 750px) { /*Så den ændre sig af sig selv - 750px er en mobil den mindste skærm*/
       .navigation ul {
         flex-wrap: nowrap; /*så den bevæger sig naturligt rundt når skærmens størlse ændre sig*/
              }
     }
-
 /* SLUT Det gør siden responstiv - tilpasset til flere størlser skræme */ 
 
 
-
-
-
-
-/*Min top kasse bar*/
+                    /* 1 section */
+/*START Min top kasse bar*/
     #white-top { /*Min kasse i toppen*/
       padding: 20px; /*Højden på min kasse */
-      background-color: rgb(238, 238, 238);  /* Farven på hele top baren */
+      background-color: rgb(255, 255, 255);  /* Farven på hele top baren */
       color: red; /* Farven på LEA HANSEN */ 
     }
-/*Min top kasse bar*/
+/*SLUT Min top kasse bar*/
 
 
 
+/*START Min top kasse bar*/
+    #white-top-text { 
+    margin-right: 50px;
+    }
+/*SLUT Min top kasse bar*/
+                    /* 1 section */
 
 
+
+                    /* 2 section */
 /* START Navigationslinje */ 
     #navigation {
       display: flex; 
       flex-direction: row; 
-      gap: 20px; /*hvor lang ned den er på skærmen i højden*/
+      gap: 50px; /*Mlemmerum mellem mine ord i menulinjen*/
       background-color: red; /*Kassen om manulinjens farve*/
-      padding: 20px; /*højden på min kasse*/
-      justify-content: center; /*At mine ord i menulinjen er i midten*/
-      
-    
+      padding: 15px; /*højden på min kasse*/
+      justify-content: center; /*At mine ord i menulinjen er i midten*/  
     }
 
     .nav-link { /*så mine ord i menulinjen er links*/
@@ -56,45 +52,57 @@
     }
 
     .nav-link:hover {
-      color: rgb(88, 88, 88); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
+      color: rgb(255, 255, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
     }
 /* SLUT Navigationslinje */
 
 
 
-
-
+/*???*/
 * { 
   box-sizing: border-box; 
-  margin:0; padding:0; }
+  margin:0; padding:0; 
+}
+/*???*/
 
+
+
+/*STRAT Bagrundfarven på hele siden body som vises på hjemmesiden*/
 body { 
   background: rgb(254, 254, 254); 
   font-family: sans-serif; 
   padding:0; 
 }
+/*SLUT Bagrundfarven på hele siden body som vises på hjemmesiden*/
+                    /* 2 section */
 
-/* CAROUSEL CONTAINER */
+
+
+                    /* 3 section */
+/* START CAROUSEL CONTAINER */
 .carousel { 
   width: 100%;
+  height: 150px;
   max-width: none; 
   margin:0 auto; 
 }
 
 .carousel__viewport {
   position: relative;
-  width: 100%;
-  height: 350px;         /* item højde - small screen - gør responsiv?*/
+  width: 100%; /*at den fylder hele skærmen vandret*/
+  height: 400px;         /* item højde - small screen - gør responsiv?*/
   overflow: hidden;
   padding: 4% 6%;
 }
+/* SLUT CAROUSEL CONTAINER */
+
 
 /* ITEMS */
 .carousel__viewport li {
   position: absolute;
   top: 0;
-  width: 400px;            /* ét item på mobil */
-  height: 100%;
+  width: 100%;            /* ét item på mobil */
+  height: auto;
   opacity: 0;
   pointer-events: none;
   display: flex;
@@ -107,31 +115,34 @@ body {
   transition: opacity .2s;
   z-index: 0;
 }
+/* ITEMS */
 
-/* ITEMS ONEonONE */
+
+
+/* START ITEMS ONEonONE */
 #item1 { 
-  animation: item1Anim 20s infinite linear;
-  background: rgb(255, 255, 255); 
+  animation: item1Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: rgb(255, 255, 255); /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 #item2 { 
-  animation: item2Anim 20s infinite linear;
-  background: rgb(255, 255, 255); 
+  animation: item2Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: rgb(255, 255, 255); /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 #item3 { 
-  animation: item3Anim 20s infinite linear;
-  background: #ffffff; 
+  animation: item3Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 #item4 { 
-  animation: item4Anim 20s infinite linear;
-  background: #ffffff; 
+  animation: item4Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 #item5 { 
-  animation: item5Anim 20s infinite linear;
-  background: #ffffff; 
+  animation: item5Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 #item6 { 
-  animation: item6Anim 20s infinite linear;
-  background: #ffffff; 
+  animation: item6Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
+  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
 }
 
 .item {
@@ -140,18 +151,23 @@ body {
 }
 
 .item__image {
-  width: 300px;
+  width: 1900px;
   height: auto;
 }
+/* SLUT ITEMS ONEonONE */
+
+
 
 /* VARIABLER - overlapper hinanden, så det kun er 1 item som vises */
 :root {
   --left-pos: 5%;   
   --right-pos: 5%;
 }
+/* VARIABLER - overlapper hinanden, så det kun er 1 item som vises */
 
-/* KEYFRAMES */
 
+
+/* STRAT KEYFRAMES */
 @keyframes item1Anim {
   0%, 16%   { opacity:1; left: var(--left-pos);  pointer-events:auto; z-index:2; }
   18%, 81%  { opacity:0; pointer-events:none;    z-index:0; }
@@ -167,6 +183,27 @@ body {
 @keyframes item3Anim {
   0%,16%    { opacity:0; pointer-events:none;    z-index:0; }
   17%,31%   { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
-... (42 linjer linjer tilbage)
-
 }
+/* SLUT KEYFRAMES */
+                /* 3 section */
+
+
+
+                /* 4 section */
+  #section_4 {
+    background-color: rgb(181, 181, 181);
+    height: 300px;
+    width: auto;
+    }
+                /* 4 section */
+
+
+
+                /* 5 section*/
+#section_5 {
+    background-color: rgb(255, 0, 0);
+    height: 400px;
+    width: auto;
+    }
+                /* 5 section*/
+
