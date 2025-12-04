@@ -1,18 +1,21 @@
 /* START Hvilken bagrundsfrave side skal have */ 
 
     body {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(255, 255, 255); /*Hvilken bagrundsfrave side skal have*/
     }
 
 /* SLUT Hvilken bagrundsfrave side skal have */ 
 
 
 
+
+
+
 /* START på Det gør siden responstiv - tilpasset til flere størlser skræme */ 
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 750px) { /*Så den ændre sig af sig selv - 750px er en mobil den mindste skærm*/
       .navigation ul {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; /*så den bevæger sig naturligt rundt når skærmens størlse ændre sig*/
              }
     }
 
@@ -20,289 +23,150 @@
 
 
 
+
+
+
+/*Min top kasse bar*/
+    #white-top { /*Min kasse i toppen*/
+      padding: 20px; /*Højden på min kasse */
+      background-color: rgb(238, 238, 238);  /* Farven på hele top baren */
+      color: red; /* Farven på LEA HANSEN */ 
+    }
+/*Min top kasse bar*/
+
+
+
+
+
 /* START Navigationslinje */ 
     #navigation {
-      display: flex;
+      display: flex; 
       flex-direction: row; 
-      gap: 20px;
+      gap: 20px; /*hvor lang ned den er på skærmen i højden*/
+      background-color: red; /*Kassen om manulinjens farve*/
+      padding: 20px; /*højden på min kasse*/
+      justify-content: center; /*At mine ord i menulinjen er i midten*/
+      
+    
     }
 
-    .nav-link {
-     text-decoration: none;
-     color: black;
+    .nav-link { /*så mine ord i menulinjen er links*/
+     text-decoration: none; 
+     color: black; /*Mine ord i min menulinjes farve*/
     }
 
     .nav-link:hover {
-      color: rgb(88, 88, 88);
+      color: rgb(88, 88, 88); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
     }
 /* SLUT Navigationslinje */
 
 
-/* START Juster hvor meget plads teksten skal have */
-      .text-section {
-      width: 40%;          
-    }
-/* SLUT Juster hvor meget plads teksten skal have */
-
-
-/* STRAT Juster billedstørrelse */
-    .image-section img {
-        width: 100%;
-        max-width: 500px;           
-        border-radius: 10px;
-    }
-/* SLUT Juster billedstørrelse */
 
 
 
+* { 
+  box-sizing: border-box; 
+  margin:0; padding:0; }
 
-
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
+body { 
+  background: rgb(254, 254, 254); 
+  font-family: sans-serif; 
+  padding:0; 
 }
 
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
+/* CAROUSEL CONTAINER */
+.carousel { 
+  width: 100%;
+  max-width: none; 
+  margin:0 auto; 
 }
 
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
-
-body {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.carousel {
+.carousel--viewport {
   position: relative;
-  padding-top: 40%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+  width: 100%;
+  height: 350px;         /* item højde - small screen - gør responsiv?*/
+  overflow: hidden;
+  padding: 4% 6%;
 }
 
-.carousel__viewport {
+/* ITEMS */
+.carousel--viewport li {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-color: #f99;
-  counter-increment: item;
-}
-
-.carousel__slide:nth-child(even) {
-  background-color: #99f;
-}
-
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-40%,70px);
-  color: #fff;
-  font-size: 2em;
-}
-
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 400px;            /* ét item på mobil */
   height: 100%;
-  scroll-snap-align: center;
-}
-
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 20%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
-}
-
-.carousel::before,
-.carousel__prev {
-  left: -1rem;
-}
-
-.carousel::after,
-.carousel__next {
-  right: -1rem;
-}
-
-.carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 1;
-  background-color: #333;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
+  opacity: 0;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #111;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: opacity .2s;
+  z-index: 0;
 }
 
-.carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+/* ITEMS ONEonONE */
+#item1 { 
+  animation: item1Anim 20s infinite linear;
+  background: rgb(255, 255, 255); 
+}
+#item2 { 
+  animation: item2Anim 20s infinite linear;
+  background: rgb(255, 255, 255); 
+}
+#item3 { 
+  animation: item3Anim 20s infinite linear;
+  background: #ffffff; 
+}
+#item4 { 
+  animation: item4Anim 20s infinite linear;
+  background: #ffffff; 
+}
+#item5 { 
+  animation: item5Anim 20s infinite linear;
+  background: #ffffff; 
+}
+#item6 { 
+  animation: item6Anim 20s infinite linear;
+  background: #ffffff; 
 }
 
-.carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+.item {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-
-.slide-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* gør at billedet ikke strækkes og stadig fylder */
-  object-position: center;
-  pointer-events: none; /* swipe forbliver smooth og bliver ikke "fanget" af billedet */
+.item--image {
+  width: 300px;
+  height: auto;
 }
 
-.carousel__slide {
-  background: none; /* fjerner din farvede baggrund */
+/* VARIABLER - overlapper hinanden, så det kun er 1 item som vises */
+:root {
+  --left-pos: 5%;   
+  --right-pos: 5%;
 }
 
+/* KEYFRAMES */
 
+@keyframes item1Anim {
+  0%, 16%   { opacity:1; left: var(--left-pos);  pointer-events:auto; z-index:2; }
+  18%, 81%  { opacity:0; pointer-events:none;    z-index:0; }
+  82%,100%  { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
+}
 
+@keyframes item2Anim {
+  0%,16%    { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
+  17%,31%   { opacity:1; left: var(--left-pos);  pointer-events:auto; z-index:2; }
+  33%,100%  { opacity:0; pointer-events:none;    z-index:0; }
+}
+
+@keyframes item3Anim {
+  0%,16%    { opacity:0; pointer-events:none;    z-index:0; }
+  17%,31%   { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
+... (42 linjer linjer tilbage)
+
+}
