@@ -188,32 +188,47 @@ body {
                 /* 3 section */
 
 
+                /* 4 section*/
+.contentindex {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-areas: 
+  "tekst1 billede1"
+  "billede2 tekst2"
+  "tekst3 billede3"
+  "billede4 tekst4";
+  margin: 0 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
+}
 
-                /* 4 section */
-  #section_4 {
-    background-color: rgb(255, 0, 0);
-    height: 300px;
-    width: auto;
-    }
-                /* 4 section */
-
-
-
-                /* 5 section*/
-#section_5 {
-    background-color: rgb(255, 255, 255);
-    height: 400px;
-    width: auto;
-    }
-                /* 5 section*/
-
-
-
-                 /* 6 section*/
-#section_6 {
-    background-color: rgb(187, 187, 187);
-    height: 400px;
-    width: auto;
-    }
-                /* 6 section*/
-
+.contentindex--tekst1 { 
+  grid-area: tekst1;
+  color: red;
+  align-content: center;
+}
+.contentindex--billede1 {
+  grid-area: billede1;
+ }
+.contentindex--tekst2 {
+  grid-area: tekst2;
+  color: red;
+ }
+.contentindex--billede2 { 
+ grid-area: billede2;
+}
+.contentindex--tekst3 {
+  grid-area: tekst3;
+  color: red;
+ }
+.contentindex--billede3 {
+  grid-area: billede3;
+ }
+.contentindex--tekst4 { 
+  grid-area: tekst4;
+  color: red;
+}
+.contentindex--billede4 {
+  grid-area: billede4;
+ }
+                  /* 4 section*/
