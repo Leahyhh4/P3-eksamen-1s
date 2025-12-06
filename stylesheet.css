@@ -201,13 +201,13 @@ body {
   grid-template-rows: 300px 300px 300px 300px;
 }
 
-.contentindex--tekst1:hover { 
+.contentindex--tekst1: { 
   grid-area: tekst1;
   align-content: center;
   color: red;
  }
    
- .contentindex--tekst1 a:hover {
+ .contentindex--tekst1{
       color: rgb(25, 0, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
     }
 
