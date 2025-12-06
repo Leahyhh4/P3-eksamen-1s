@@ -151,7 +151,7 @@ body {
 }
 
 .item__image {
-  width: 1900px;
+  width: 1300px;
   height: auto;
 }
 /* SLUT ITEMS ONEonONE */
@@ -190,7 +190,6 @@ body {
 
                 /* 4 section*/
 .contentindex {
-  background-color: antiquewhite;
   display: grid;
   grid-template-areas: 
   "tekst1 billede1"
@@ -204,31 +203,40 @@ body {
 
 .contentindex--tekst1 { 
   grid-area: tekst1;
-  color: red;
+  color: rgb(255, 0, 0);
   align-content: center;
 }
-.contentindex--billede1 {
+.contentindex--billede1 img {
   grid-area: billede1;
+  align-content: center;
+  width: 300px;
+  height: auto;
  }
 .contentindex--tekst2 {
   grid-area: tekst2;
-  color: red;
+  color: rgb(255, 0, 0);
+  align-content: center;
  }
 .contentindex--billede2 { 
  grid-area: billede2;
+ align-content: center;
 }
 .contentindex--tekst3 {
   grid-area: tekst3;
-  color: red;
+  color: rgb(255, 0, 0);
+  align-content: center;
  }
 .contentindex--billede3 {
   grid-area: billede3;
+  align-content: center;
  }
 .contentindex--tekst4 { 
   grid-area: tekst4;
-  color: red;
+  color: rgb(255, 0, 0);
+  align-content: center;
 }
 .contentindex--billede4 {
   grid-area: billede4;
+  align-content: center;
  }
                   /* 4 section*/
