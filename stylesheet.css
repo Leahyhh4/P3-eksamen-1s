@@ -151,7 +151,7 @@ body {
 }
 
 .item__image {
-  width: 1300px;
+  width: 1580px;
   height: auto;
 }
 /* SLUT ITEMS ONEonONE */
@@ -201,15 +201,21 @@ body {
   grid-template-rows: 300px 300px 300px 300px;
 }
 
-.contentindex--tekst1 { 
+.contentindex--tekst1:hover { 
   grid-area: tekst1;
-  color: rgb(255, 0, 0);
   align-content: center;
-}
+  color: red;
+ }
+   
+ .contentindex--tekst1 a:hover {
+      color: rgb(25, 0, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
+    }
+
+
 .contentindex--billede1 img {
   grid-area: billede1;
   align-content: center;
-  width: 300px;
+  width: 400px;
   height: auto;
  }
 .contentindex--tekst2 {
@@ -220,6 +226,8 @@ body {
 .contentindex--billede2 { 
  grid-area: billede2;
  align-content: center;
+ width: 400px;
+ height: auto;
 }
 .contentindex--tekst3 {
   grid-area: tekst3;
@@ -229,6 +237,8 @@ body {
 .contentindex--billede3 {
   grid-area: billede3;
   align-content: center;
+  width: 400px;
+  height: auto;
  }
 .contentindex--tekst4 { 
   grid-area: tekst4;
@@ -238,5 +248,23 @@ body {
 .contentindex--billede4 {
   grid-area: billede4;
   align-content: center;
+  width: 400px;
+  height: auto;
  }
                   /* 4 section*/
+                  
+                  
+                  
+                /* 5 section*/
+/*START Fooster*/
+    #Footer { 
+    display: flex;
+    flex-direction: row; 
+    gap: 150px; /*Mlemmerum mellem mine ord i menulinjen*/
+    margin-right: 100px; /*Bredten på min side, vandret*/
+    padding: 30px; /*højden på min kasse*/
+    justify-content: center; /*At mine ord i menulinjen er i midten*/  
+    background-color: red; /*Kassen om manulinjens farve*/
+    }
+/*SLUT Fooster*/
+              /* 5 section */
