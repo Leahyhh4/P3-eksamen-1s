@@ -1,3 +1,5 @@
+                                    /*GÆLDER PÅ ALLE 5 SIDER*/
+
 /* START Hvilken bagrundsfrave side skal have */ 
     body {
       background-color: rgb(255, 255, 255); /*Hvilken bagrundsfrave side skal have*/
@@ -14,8 +16,6 @@
     }
 /* SLUT Det gør siden responstiv - tilpasset til flere størlser skræme */ 
 
-
-                    /* 1 section */
 /*START Min top kasse bar*/
     #white-top { /*Min kasse i toppen*/
       padding: 20px; /*Højden på min kasse */
@@ -24,18 +24,12 @@
     }
 /*SLUT Min top kasse bar*/
 
-
-
 /*START Min top kasse bar*/
     #white-top-text { 
     margin-right: 50px;
     }
 /*SLUT Min top kasse bar*/
-                    /* 1 section */
 
-
-
-                    /* 2 section */
 /* START Navigationslinje */ 
     #navigation {
       display: flex; 
@@ -55,8 +49,19 @@
       color: rgb(255, 255, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
     }
 /* SLUT Navigationslinje */
-
-
+              
+          
+/*START Fooster*/
+    #Footer { 
+    display: flex;
+    flex-direction: row; 
+    gap: 150px; /*Mlemmerum mellem mine ord i menulinjen*/
+    margin-right: 100px; /*Bredten på min side, vandret*/
+    padding: 30px; /*højden på min kasse*/
+    justify-content: center; /*At mine ord i menulinjen er i midten*/  
+    background-color: red; /*Kassen om manulinjens farve*/
+    }
+/*SLUT Fooster*/
 
 /*???*/
 * { 
@@ -74,12 +79,21 @@ body {
   padding:0; 
 }
 /*SLUT Bagrundfarven på hele siden body som vises på hjemmesiden*/
-                    /* 2 section */
+
+                                  /*GÆLDER PÅ ALLE 5 SIDER*/
 
 
 
-                    /* 3 section */
-/* START CAROUSEL CONTAINER */
+
+
+
+
+
+
+
+
+                                   /*HER STARTER INDEKSIDEN LEA!!!!*/
+ /* START CAROUSEL CONTAINER */
 .carousel { 
   width: 100%;
   height: 100px;
@@ -94,7 +108,6 @@ body {
   overflow: hidden;
   padding: 4% 6%;
 }
-/* SLUT CAROUSEL CONTAINER */
 
 
 /* ITEMS */
@@ -185,10 +198,11 @@ body {
   17%,31%   { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
 }
 /* SLUT KEYFRAMES */
-                /* 3 section */
+                
+/* SLUT CAROUSEL CONTAINER */
 
 
-                /* 4 section*/
+/*HER STARTER MIN GRID CONTENER*/
 .contentindex {
   display: grid;
   grid-template-areas: 
@@ -201,18 +215,290 @@ body {
   grid-template-rows: 300px 300px 300px 300px;
 }
 
-.contentindex--tekst1: { 
+.contentindex--tekst1 { 
   grid-area: tekst1;
   align-content: center;
-  color: red;
+  color: red; 
  }
-   
- .contentindex--tekst1{
-      color: rgb(25, 0, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
-    }
-
+  
 
 .contentindex--billede1 img {
+  grid-area: billede1;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst2 {
+  grid-area: tekst2;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede2 img { 
+ grid-area: billede2;
+ align-content: center;
+ width: 400px;
+ height: auto;
+}
+.contentindex--tekst3 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede3 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst4 { 
+  grid-area: tekst4;
+  color: rgb(255, 0, 0);
+  align-content: center;
+}
+.contentindex--billede4 img {
+  grid-area: billede4;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+/*HER SLUTTER MIN GRID CONTENER*/
+                                 /*HER SLUTTER INDEKSIDEN LEA!!!!*/
+                  
+
+
+
+
+
+
+
+
+
+
+                                  /*HER STARTER OM MIG SIDEN LEA!!!!*/
+/*HER STARTER MIN GRID CONTENER*/
+.contentindex {
+  display: grid;
+  grid-template-areas: 
+  "tekst1 billede1"
+  "billede2 tekst2"
+  "tekst3 billede3";
+  margin: 0 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+
+.contentindex--tekst1 { 
+  grid-area: tekst1;
+  align-content: center;
+  color: red; 
+ }
+  
+
+.contentindex--billede1 img {
+  grid-area: billede1;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst2 {
+  grid-area: tekst2;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede2 img { 
+ grid-area: billede2;
+ align-content: center;
+ width: 400px;
+ height: auto;
+}
+.contentindex--tekst3 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede3 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+                                  
+                                   /*HER SLUTTER OM MIG SIDEN LEA!!!!*/ 
+
+
+
+
+
+
+
+
+
+
+                                    /*HER STARTER PRODUKT SIDEN LEA!!!!*/
+/*HER STARTER MIN GRID CONTENER*/
+.contentindex {
+  display: grid;
+  grid-template-areas: 
+  "tekst1 billede1"
+  "billede2 tekst2"
+  "tekst3 billede3"
+  "billede4 tekst4"
+  "teskt5 billede5"
+  "billede6 tekst6";
+  margin: 0 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+
+.contentindex--tekst1 { 
+  grid-area: tekst1;
+  align-content: center;
+  color: red; 
+ }
+
+.contentindex--billede1 img {
+  grid-area: billede1;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst2 {
+  grid-area: tekst2;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede2 img { 
+ grid-area: billede2;
+ align-content: center;
+ width: 400px;
+ height: auto;
+}
+.contentindex--tekst3 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede3 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst4 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede4 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+ .contentindex--tekst5 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede5 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+ .contentindex--tekst6 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede6 img {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+                                  
+                                   /*HER SLUTTER PRODUKT SIDEN LEA!!!!*/ 
+
+
+
+
+
+
+
+
+
+                                    /*HER STARTER VÆRKTØJSKASSE SIDEN LEA!!!!*/
+/*HER STARTER MIN GRID CONTENER*/
+.contentindex {
+  display: grid;
+  grid-template-areas: 
+  "tekst1 billede1"
+  "billede2 tekst2";
+  margin: 0 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+
+.contentindex--tekst1 { 
+  grid-area: tekst1;
+  align-content: center;
+  color: red; 
+ }
+
+.contentindex--billede1 img {
+  grid-area: billede1;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+.contentindex--tekst2 {
+  grid-area: tekst2;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede2 img { 
+ grid-area: billede2;
+ align-content: center;
+ width: 400px;
+ height: auto;
+}
+                                  
+                                   /*HER SLUTTER VÆRKTØJKASSEN SIDEN LEA!!!!*/ 
+
+
+
+
+
+
+
+
+
+
+
+                                    /*HER STARTER KONTAKT SIDEN LEA!!!!*/
+/*HER STARTER MIN GRID CONTENER*/
+.contentindex {
+  display: grid;
+  grid-template-areas: 
+  "tekst1 billede1"
+  "billede2 tekst2"
+  "tekst3 billede3"
+  "billede4 tekst4"
+  "teskt5 billede5"
+  "billede6 tekst6";
+  margin: 0 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+
+.contentindex--tekst1 {
+  grid-area: tekst1;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+
+.contentindex--billede1 {
   grid-area: billede1;
   align-content: center;
   width: 400px;
@@ -240,31 +526,27 @@ body {
   width: 400px;
   height: auto;
  }
-.contentindex--tekst4 { 
-  grid-area: tekst4;
+.contentindex--tekst4 {
+  grid-area: tekst3;
   color: rgb(255, 0, 0);
   align-content: center;
-}
+ }
 .contentindex--billede4 {
-  grid-area: billede4;
+  grid-area: billede3;
   align-content: center;
   width: 400px;
   height: auto;
  }
-                  /* 4 section*/
-                  
-                  
-                  
-                /* 5 section*/
-/*START Fooster*/
-    #Footer { 
-    display: flex;
-    flex-direction: row; 
-    gap: 150px; /*Mlemmerum mellem mine ord i menulinjen*/
-    margin-right: 100px; /*Bredten på min side, vandret*/
-    padding: 30px; /*højden på min kasse*/
-    justify-content: center; /*At mine ord i menulinjen er i midten*/  
-    background-color: red; /*Kassen om manulinjens farve*/
-    }
-/*SLUT Fooster*/
-              /* 5 section */
+ .contentindex--tekst5 {
+  grid-area: tekst3;
+  color: rgb(255, 0, 0);
+  align-content: center;
+ }
+.contentindex--billede5 {
+  grid-area: billede3;
+  align-content: center;
+  width: 400px;
+  height: auto;
+ }
+                                  
+                                   /*HER SLUTTER KONTAKT SIDEN LEA!!!!*/ 
