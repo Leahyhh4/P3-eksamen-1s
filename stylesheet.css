@@ -50,7 +50,7 @@
 /* SLUT Navigationslinje */
               
           
-/*START Fooster*/
+/*START Footer*/
     #Footer { 
     display: flex;
     flex-direction: row; 
@@ -60,7 +60,7 @@
     justify-content: center; /*At mine ord i menulinjen er i midten*/  
     background-color: red; /*Kassen om manulinjens farve*/
     }
-/*SLUT Fooster*/
+/*SLUT Footer*/
 
 /*???*/
 * { 
@@ -216,8 +216,8 @@ body {
 
 .contentindex--tekst1 { 
   grid-area: tekst1;
-  align-content: center;
   color: red; 
+  align-content: center;
  }
   
 
@@ -355,7 +355,7 @@ body {
   color: red; 
  }
 
-.contentindex--billede1 img {
+.contentindex--billede1 {
   grid-area: billede1;
   align-content: center;
   width: 400px;
@@ -366,7 +366,7 @@ body {
   color: rgb(255, 0, 0);
   align-content: center;
  }
-.contentindex--billede2 img { 
+.contentindex--billede2 { 
  grid-area: billede2;
  align-content: center;
  width: 400px;
@@ -377,7 +377,7 @@ body {
   color: rgb(255, 0, 0);
   align-content: center;
  }
-.contentindex--billede3 img {
+.contentindex--billede3 {
   grid-area: billede3;
   align-content: center;
   width: 400px;
@@ -388,7 +388,7 @@ body {
   color: rgb(255, 0, 0);
   align-content: center;
  }
-.contentindex--billede4 img {
+.contentindex--billede4 {
   grid-area: billede3;
   align-content: center;
   width: 400px;
@@ -399,7 +399,7 @@ body {
   color: rgb(255, 0, 0);
   align-content: center;
  }
-.contentindex--billede5 img {
+.contentindex--billede5 {
   grid-area: billede3;
   align-content: center;
   width: 400px;
@@ -410,7 +410,7 @@ body {
   color: rgb(255, 0, 0);
   align-content: center;
  }
-.contentindex--billede6 img {
+.contentindex--billede6 {
   grid-area: billede3;
   align-content: center;
   width: 400px;
