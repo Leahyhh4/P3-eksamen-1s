@@ -259,5 +259,148 @@ body {
 /*START flexbox*/            
 
 /********************************************HER SLUTTER INDEKSIDEN LEA!!!!**********************************************************/
-                                
- 
+   
+
+
+
+/********************************************HER STARTER OM MIG LEA!!!!**********************************************************/
+
+/*START flexbox*/                                
+
+.mød-mig-bilede-1{
+    background-color: brown;
+    width: 100%;
+    height: auto;
+}
+
+.mød-mig-bilede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+} 
+
+.mød-mig-tekstbox-1{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
+}
+
+
+
+.min-fortid-bilede-2{
+    background-color: brown;
+    width: 100%;
+    height: 500px;
+}
+
+.min-fortid-bilede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+}
+
+.min-fortid-tekstbox-2{
+   background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
+}
+
+
+
+.nuværende-stilling-bilede-3{
+    background-color: brown;
+    width: 100%;
+    height: 500px;
+}
+
+.nuværende-stilling-bilede-3 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+}
+.nuværende-stilling-tekstbox-3{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
+}
+
+
+
+/* Her starter Hvordan flex skal opføere sig */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px){ /*Dette gør at hvis skærmen bliver større end 600px så ændre opsætningen sig på hjemmeside*/
+
+
+.mød-mig-bilede-1{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.mød-mig-tekstbox-1{
+    background-color: aqua;
+     width: 50%;
+    height: 250px;
+}
+
+.min-fortid-bilede-2{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.min-fortid-tekstbox-2{
+    background-color: aqua;
+    width: 50%;
+    height: 250px;
+}
+
+.nuværende-stilling-bilede-3{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.nuværende-stilling-tekstbox-3{
+    background-color: aqua;
+    width: 50%;
+    height: 250px;
+}
+
+
+.mød-mig-række-1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.min-fortid-række-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.nuværende-stilling-række-3{
+    display: flex;
+    flex-direction: row-reverse;
+}
+}
+/*START flexbox*/      
+
+
+/********************************************HER STARTER OM MIG LEA!!!!**********************************************************/
