@@ -51,12 +51,11 @@
               
           
 /*START Footer*/
-    #Footer { 
+  #Footer { 
     display: flex;
     flex-direction: row; 
-    gap: 150px; /*Mlemmerum mellem mine ord i menulinjen*/
-    margin-right: 100px; /*Bredten på min side, vandret*/
-    padding: 30px; /*højden på min kasse*/
+    gap: 200px; /*Mlemmerum mellem mine ord i menulinjen*/
+    padding: 15px; /*højden på min kasse*/
     justify-content: center; /*At mine ord i menulinjen er i midten*/  
     background-color: red; /*Kassen om manulinjens farve*/
     }
@@ -199,6 +198,8 @@ body {
 /* SLUT KEYFRAMES */
                 
 /* SLUT CAROUSEL CONTAINER */
+
+
 
 
 /*HER STARTER MIN GRID CONTENER*/
