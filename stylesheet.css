@@ -1,11 +1,10 @@
-                                    /*GÆLDER PÅ ALLE 5 SIDER*/
+/*******************************************START GÆLDER PÅ ALLE 5 SIDER*********************************************************/
 
 /* START Hvilken bagrundsfrave side skal have */ 
     body {
       background-color: rgb(255, 255, 255); /*Hvilken bagrundsfrave side skal have*/
     }
 /* SLUT Hvilken bagrundsfrave side skal have */ 
-
 
 
 /* START på Det gør siden responstiv - tilpasset til flere størlser skræme */ 
@@ -29,7 +28,7 @@
     }
 /*SLUT Min top kasse bar*/
 
-/* START Navigationslinje */ 
+/* START Navigationslinje menu*/ 
     #navigation {
       display: flex; 
       flex-direction: row; 
@@ -47,7 +46,7 @@
     .nav-link:hover {
       color: rgb(255, 255, 255); /*Så ordene i menulinjen skifter frave når musen er oven dem*/
     }
-/* SLUT Navigationslinje */
+/* SLUT Navigationslinje menu*/
               
           
 /*START Footer*/
@@ -61,12 +60,12 @@
     }
 /*SLUT Footer*/
 
-/*???*/
+/*START*/
 * { 
   box-sizing: border-box; 
   margin:0; padding:0; 
 }
-/*???*/
+/*SLUT*/
 
 
 
@@ -78,475 +77,187 @@ body {
 }
 /*SLUT Bagrundfarven på hele siden body som vises på hjemmesiden*/
 
-                                  /*GÆLDER PÅ ALLE 5 SIDER*/
+/**********************************************SLUT GÆLDER PÅ ALLE 5 SIDER*********************************************************/
 
+                          
 
+/********************************************HER STARTER INDEKSIDEN LEA!!!!**********************************************************/
 
+/*START flexbox*/                                
 
-
-
-
-
-
-
-
-                                   /*HER STARTER INDEKSIDEN LEA!!!!*/
- /* START CAROUSEL CONTAINER */
-.carousel { 
-  width: 100%;
-  height: 100px;
-  max-width: none; 
-  margin:0 auto; 
+.bilede-1{
+    background-color: brown;
+    width: 100%;
+    height: auto;
 }
 
-.carousel__viewport {
-  position: relative;
-  width: 100%; /*at den fylder hele skærmen vandret*/
-  height: 400px;         /* item højde - small screen - gør responsiv?*/
-  overflow: hidden;
-  padding: 4% 6%;
+.bilede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+} 
+
+.tekstbox-1{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
 }
 
 
-/* ITEMS */
-.carousel__viewport li {
-  position: absolute;
-  top: 0;
-  width: 100%;            /* ét item på mobil */
-  height: auto;
-  opacity: 0;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  color: #111;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  transition: opacity .2s;
-  z-index: 0;
-}
-/* ITEMS */
 
-
-
-/* START ITEMS ONEonONE */
-#item1 { 
-  animation: item1Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: rgb(255, 255, 255); /*Farven på bagurnden - men der vises billeder overen på nu*/
-}
-#item2 { 
-  animation: item2Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: rgb(255, 255, 255); /*Farven på bagurnden - men der vises billeder overen på nu*/
-}
-#item3 { 
-  animation: item3Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
-}
-#item4 { 
-  animation: item4Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
-}
-#item5 { 
-  animation: item5Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
-}
-#item6 { 
-  animation: item6Anim 8s infinite linear; /*Hvor hurtigt billederne skifter - hvor lang tid animationne vare*/
-  background: #ffffff; /*Farven på bagurnden - men der vises billeder overen på nu*/
+.bilede-2{
+    background-color: brown;
+    width: 100%;
+    height: 500px;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
+.bilede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
-.item__image {
-  width: 1580px;
-  height: auto;
-}
-/* SLUT ITEMS ONEonONE */
-
-
-
-/* VARIABLER - overlapper hinanden, så det kun er 1 item som vises */
-:root {
-  --left-pos: 5%;   
-  --right-pos: 5%;
-}
-/* VARIABLER - overlapper hinanden, så det kun er 1 item som vises */
-
-
-
-/* STRAT KEYFRAMES */
-@keyframes item1Anim {
-  0%, 16%   { opacity:1; left: var(--left-pos);  pointer-events:auto; z-index:2; }
-  18%, 81%  { opacity:0; pointer-events:none;    z-index:0; }
-  82%,100%  { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
+.tekstbox-2{
+   background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
 }
 
-@keyframes item2Anim {
-  0%,16%    { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
-  17%,31%   { opacity:1; left: var(--left-pos);  pointer-events:auto; z-index:2; }
-  33%,100%  { opacity:0; pointer-events:none;    z-index:0; }
+
+
+.bilede-3{
+    background-color: brown;
+    width: 100%;
+    height: 500px;
 }
 
-@keyframes item3Anim {
-  0%,16%    { opacity:0; pointer-events:none;    z-index:0; }
-  17%,31%   { opacity:1; left: var(--right-pos); pointer-events:auto; z-index:1; }
+.bilede-3 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
-/* SLUT KEYFRAMES */
-                
-/* SLUT CAROUSEL CONTAINER */
-
-
-
-
-/*HER STARTER MIN GRID CONTENER*/
-.contentindex {
-  display: grid;
-  grid-template-areas: 
-  "tekst1 billede1"
-  "billede2 tekst2"
-  "tekst3 billede3"
-  "billede4 tekst4";
-  margin: 0 100px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px 300px;
+.tekstbox-3{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
 }
 
-.contentindex--tekst1 { 
-  grid-area: tekst1;
-  color: red; 
-  align-content: center;
- }
-  
-
-.contentindex--billede1 img {
-  grid-area: billede1;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst2 {
-  grid-area: tekst2;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede2 img { 
- grid-area: billede2;
- align-content: center;
- width: 400px;
- height: auto;
-}
-.contentindex--tekst3 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede3 img {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst4 { 
-  grid-area: tekst4;
-  color: rgb(255, 0, 0);
-  align-content: center;
-}
-.contentindex--billede4 img {
-  grid-area: billede4;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-/*HER SLUTTER MIN GRID CONTENER*/
-                                 /*HER SLUTTER INDEKSIDEN LEA!!!!*/
-                  
 
 
-
-
-
-
-
-
-
-
-                                  /*HER STARTER OM MIG SIDEN LEA!!!!*/
-/*HER STARTER MIN GRID CONTENER*/
-.contentindex {
-  display: grid;
-  grid-template-areas: 
-  "tekst1 billede1"
-  "billede2 tekst2"
-  "tekst3 billede3";
-  margin: 0 100px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px 300px;
+.bilede-4{
+    background-color: brown;
+    width: 100%;
+    height: 500px;
 }
 
-.contentindex--tekst1 { 
-  grid-area: tekst1;
-  align-content: center;
-  color: red; 
- }
-  
-
-.contentindex--billede1 img {
-  grid-area: billede1;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst2 {
-  grid-area: tekst2;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede2 img { 
- grid-area: billede2;
- align-content: center;
- width: 400px;
- height: auto;
-}
-.contentindex--tekst3 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede3 img {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-                                  
-                                   /*HER SLUTTER OM MIG SIDEN LEA!!!!*/ 
-
-
-
-
-
-
-
-
-
-
-                                    /*HER STARTER PRODUKT SIDEN LEA!!!!*/
-/*HER STARTER MIN GRID CONTENER*/
-.contentindex {
-  display: grid;
-  grid-template-areas: 
-  "tekst1 billede1"
-  "billede2 tekst2"
-  "tekst3 billede3"
-  "billede4 tekst4"
-  "teskt5 billede5"
-  "billede6 tekst6";
-  margin: 0 100px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px 300px;
+.bilede-4 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
-.contentindex--tekst1 { 
-  grid-area: tekst1;
-  align-content: center;
-  color: red; 
- }
-
-.contentindex--billede1 {
-  grid-area: billede1;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst2 {
-  grid-area: tekst2;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede2 { 
- grid-area: billede2;
- align-content: center;
- width: 400px;
- height: auto;
-}
-.contentindex--tekst3 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede3 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst4 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede4 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
- .contentindex--tekst5 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede5 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
- .contentindex--tekst6 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede6 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-                                  
-                                   /*HER SLUTTER PRODUKT SIDEN LEA!!!!*/ 
-
-
-
-
-
-
-
-
-
-                                    /*HER STARTER VÆRKTØJSKASSE SIDEN LEA!!!!*/
-/*HER STARTER MIN GRID CONTENER*/
-.contentindex {
-  display: grid;
-  grid-template-areas: 
-  "tekst1 billede1"
-  "billede2 tekst2";
-  margin: 0 100px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px 300px;
+.tekstbox-4{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
 }
 
-.contentindex--tekst1 { 
-  grid-area: tekst1;
-  align-content: center;
-  color: red; 
- }
+/* Her starter Hvordan flex skal opføere sig */
 
-.contentindex--billede1 img {
-  grid-area: billede1;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst2 {
-  grid-area: tekst2;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede2 img { 
- grid-area: billede2;
- align-content: center;
- width: 400px;
- height: auto;
-}
-                                  
-                                   /*HER SLUTTER VÆRKTØJKASSEN SIDEN LEA!!!!*/ 
-
-
-
-
-
-
-
-
-
-
-
-                                    /*HER STARTER KONTAKT SIDEN LEA!!!!*/
-/*HER STARTER MIN GRID CONTENER*/
-.contentindex {
-  display: grid;
-  grid-template-areas: 
-  "tekst1 billede1"
-  "billede2 tekst2"
-  "tekst3 billede3"
-  "billede4 tekst4"
-  "teskt5 billede5"
-  "billede6 tekst6";
-  margin: 0 100px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 300px 300px 300px 300px;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-.contentindex--tekst1 {
-  grid-area: tekst1;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
+@media (min-width: 600px){ /*Dette gør at hvis skærmen bliver større end 600px så ændre opsætningen sig på hjemmeside*/
 
-.contentindex--billede1 {
-  grid-area: billede1;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst2 {
-  grid-area: tekst2;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede2 { 
- grid-area: billede2;
- align-content: center;
- width: 400px;
- height: auto;
+
+.bilede-1{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
 }
-.contentindex--tekst3 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede3 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-.contentindex--tekst4 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede4 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
- .contentindex--tekst5 {
-  grid-area: tekst3;
-  color: rgb(255, 0, 0);
-  align-content: center;
- }
-.contentindex--billede5 {
-  grid-area: billede3;
-  align-content: center;
-  width: 400px;
-  height: auto;
- }
-                                  
-                                   /*HER SLUTTER KONTAKT SIDEN LEA!!!!*/ 
+
+.tekstbox-1{
+    background-color: aqua;
+     width: 50%;
+    height: 250px;
+}
+
+.bilede-2{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.tekstbox-2{
+    background-color: aqua;
+    width: 50%;
+    height: 250px;
+}
+
+.bilede-3{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.tekstbox-3{
+    background-color: aqua;
+    width: 50%;
+    height: 250px;
+}
+
+.bilede-4{
+    background-color: brown;
+    width: 50%;
+    height: 250px;
+}
+
+.tekstbox-4{
+    background-color: aqua;
+    width: 50%;
+    height: 250px;
+}
+
+.række-1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.række-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.række-3{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.række-4{
+    display: flex;
+    flex-direction: row;
+}
+}
+/*START flexbox*/            
+
+/********************************************HER SLUTTER INDEKSIDEN LEA!!!!**********************************************************/
+                                
+ 
