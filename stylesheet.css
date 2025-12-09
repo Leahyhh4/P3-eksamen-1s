@@ -33,7 +33,7 @@
       display: flex; 
       flex-direction: row; 
       gap: 50px; /*Mlemmerum mellem mine ord i menulinjen*/
-      background-color: red; /*Kassen om manulinjens farve*/
+      background-color: rgb(168, 25, 25); /*Kassen om manulinjens farve*/
       padding: 15px; /*højden på min kasse*/
       justify-content: center; /*At mine ord i menulinjen er i midten*/  
     }
@@ -56,7 +56,7 @@
     gap: 80px; /*Mlemmerum mellem mine ord i menulinjen*/
     padding: 20px; /*højden på min kasse*/
     justify-content: center; /*At mine ord i menulinjen er i midten*/  
-    background-color: red; /*Kassen om manulinjens farve*/
+    background-color:rgb(168, 25, 25); /*Kassen om manulinjens farve*/
     color: white;
     }
   
@@ -258,8 +258,8 @@ body {
 }
 
 .billede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 } 
 
@@ -269,11 +269,10 @@ body {
     color: rgb(0, 0, 0);
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .billede-2{
-    background-color: brown;
     width: 100%;
     height: auto;
     display: flex;       /* gør div'en til flex-container */
@@ -284,26 +283,23 @@ body {
 }
 
 .billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    background-color: brown;
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
 .tekstbox-2{
-   background-color: aqua;
     width: 100%;
     height: 500px;
     color: rgb(0, 0, 0);
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 100px;
+    margin-left: 25%;
 }
 
 
 
 .billede-3{
-    background-color: brown;
     width: 100%;
     height: auto;
     display: flex;       /* gør div'en til flex-container */
@@ -312,25 +308,22 @@ body {
 }
 
 .billede-3 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    background-color: brown;
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 .tekstbox-3{
-    background-color: aqua;
     width: 100%;
     height: 500px;
     color: rgb(0, 0, 0);
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 
 
 .billede-4{
-    background-color: brown;
     width: 100%;
     height: auto;
     display: flex;       /* gør div'en til flex-container */
@@ -339,20 +332,18 @@ body {
 }
 
 .billede-4 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    background-color: brown;
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
 .tekstbox-4{
-    background-color: aqua;
     width: 100%;
     height: 500px;
     color: rgb(0, 0, 0);
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 100px;
+    margin-left: 25%;
 }
 
 /* Her starter Hvordan flex skal opføere sig */
@@ -367,51 +358,51 @@ body {
 
 /*felsterne inde i flexbox*/
 .billede-1{
-    background-color: brown;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .tekstbox-1{
-    background-color: aqua;
-     width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+     width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .billede-2{
-    background-color: brown;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .tekstbox-2{
-    background-color: aqua;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .billede-3{
-    background-color: brown;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .tekstbox-3{
-    background-color: aqua;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .billede-4{
-    background-color: brown;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 
 .tekstbox-4{
-    background-color: aqua;
-    width: 50%;
-    height: 400px;
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
 /*felsterne inde i flexbox*/
 
@@ -448,7 +439,7 @@ body {
   font-weight: bold;
   text-decoration: none;       /* fjerner understregning */
   text-align: center;
-  margin-left: 3px;
+  margin-left: none; /*så den røde kasse i bruden af call to ation knapperne er lige med overskiften til venstre med den mænge margin fra venstre side jeg har valgt*/
 }
 /*Så knapperne har en rød kasse bag sig*/
 
@@ -457,7 +448,7 @@ body {
 .cta-knap:hover {
   background-color: #8f1d17;   /* mørkere rød */
   transform: scale(1.05);      /* lille zoom-effekt */
-  transition: 0.2s;
+  transition: 0.1s; /*Hvor lang tid der skal gå før den skifter billede*/
 }
 /*Så knapperne hopper og ændre farve*/
 
