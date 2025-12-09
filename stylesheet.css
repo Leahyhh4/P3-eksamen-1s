@@ -198,7 +198,7 @@ body {
 /*START flexbox*/                                
 
 .billede-1{
-   
+    background-color: brown;
     width: 100%;
     height: auto;
     display: flex;       /* gør div'en til flex-container */
@@ -402,13 +402,18 @@ body {
     background-color: brown;
     width: 100%;
     height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+    
 }
 
 .mød-mig-billede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+    
 } 
 
 .mød-mig-tekstbox-1{
@@ -425,13 +430,16 @@ body {
 .min-fortid-billede-2{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .min-fortid-billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
@@ -449,15 +457,20 @@ body {
 .nuværende-stilling-billede-3{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+
 }
 
 .nuværende-stilling-billede-3 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
+
 .nuværende-stilling-tekstbox-3{
     background-color: aqua;
     width: 100%;
@@ -482,37 +495,37 @@ body {
 .mød-mig-billede-1{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .mød-mig-tekstbox-1{
     background-color: aqua;
      width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .min-fortid-billede-2{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .min-fortid-tekstbox-2{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .nuværende-stilling-billede-3{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .nuværende-stilling-tekstbox-3{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 
@@ -549,12 +562,16 @@ body {
     background-color: brown;
     width: 100%;
     height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+ 
 }
 
 .reel-billede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 } 
 
@@ -572,13 +589,16 @@ body {
 .billede-billede-2{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .billede-billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
@@ -596,13 +616,16 @@ body {
 .hjemmeside-billede-3{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .hjemmeside-billede-3 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 .hjemmeside-tekstbox-3{
@@ -617,14 +640,17 @@ body {
 .avis-billede-4{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .avis-billede-4 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*//
 }
 .avis-tekstbox-4{
     background-color: aqua;
@@ -638,13 +664,17 @@ body {
 .markedeting-billede-5{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+  
 }
 
 .markedeting-billede-5 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 .markedeting-tekstbox-5{
@@ -659,13 +689,16 @@ body {
 .produkt-billede-6{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .produkt-billede-6 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 .produkt-tekstbox-6{
@@ -694,73 +727,73 @@ body {
 .reel-billede-1{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .reel-tekstbox-1{
     background-color: aqua;
      width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .billede-billede-2{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .billede-tekstbox-2{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .hjemmeside-billede-3{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .hjemmesiden-tekstbox-3{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .avis-billede-4{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .avis-tekstbox-4{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .markedeting-billede-5{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .markedeting-tekstbox-5{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .produkt-billede-6{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .produkt-tekstbox-6{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 
@@ -813,12 +846,15 @@ body {
     background-color: brown;
     width: 100%;
     height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .programmer-billede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 } 
 
@@ -836,13 +872,16 @@ body {
 .udstyr-billede-2{
     background-color: brown;
     width: 100%;
-    height: 500px;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
 }
 
 .udstyr-billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
     background-color: brown;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     border-radius: 8px;         /*Den her laver runde hjørner på billede*/
 }
 
@@ -871,25 +910,25 @@ body {
 .programmer-billede-1{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .programmer-tekstbox-1{
     background-color: aqua;
      width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .udstyr-billede-2{
     background-color: brown;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 .udstyr-tekstbox-2{
     background-color: aqua;
     width: 50%;
-    height: 250px;
+    height: 400px;
 }
 
 
