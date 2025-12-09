@@ -195,6 +195,56 @@ body {
 
 /********************************************HER STARTER INDEKSIDEN LEA!!!!**********************************************************/
 
+/*Min billede slide show i toppen*/
+.slideshow {
+  width: 100%;
+  height: 400px;         /* Højde på billedserien */
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeSlider 12s infinite;
+}
+
+/* Timing for hvert billede */
+.slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+  animation-delay: 8s;
+}
+/* Timing for hvert billede */
+
+/* Fade animation */
+@keyframes fadeSlider {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* Fade animation */
+
+/*Min billede slide show i toppen*/
+
+
+
+
+
+
 /*START flexbox*/                                
 
 .billede-1{
