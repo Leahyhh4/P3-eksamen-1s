@@ -346,6 +346,54 @@ body {
     margin-left: 25%;
 }
 
+.billede-5{
+    width: 100%;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+
+    
+}
+
+.billede-5 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    width: 430px;
+    height: 430px;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+}
+
+.tekstbox-5{
+    width: 100%;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
+    margin-left: 80px;
+}
+
+.billede-6{
+    width: 100%;
+    height: auto;
+    display: flex;       /* gør div'en til flex-container */
+    justify-content: center; /* centrerer horisontalt */
+    align-items: center; 
+}
+
+.billede-6 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
+    width: 430px;
+    height: 430px;
+    border-radius: 8px;         /*Den her laver runde hjørner på billede*/
+} 
+
+.tekstbox-6 {
+    width: 100%;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    text-align: left;    /* teksten starter fra venstre*/
+    align-content: center;  /* center verticalt (top til bund)*/
+    margin-left: 25%px;
+}
+
 /* Her starter Hvordan flex skal opføere sig */
 
 .container {
@@ -404,27 +452,61 @@ body {
     width: 50%; /*bredten på den usyndelige flex box kasse*/
     height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
+
+.billede-5{
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
+}
+
+.tekstbox-5{
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
+}
+
+.billede-6{
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
+}
+
+.tekstbox-6{
+    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
+    width: 50%; /*bredten på den usyndelige flex box kasse*/
+    height: 500px; /*Højde på den usyndlige flex box kasse*/
+}
 /*felsterne inde i flexbox*/
 
 
 .række-1{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
+
 }
 
 .række-2{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*Starter fra venstre side */
 }
 
 .række-3{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
 }
 
 .række-4{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*Starter fra venstre side */
+}
+.række-5{
+    display: flex;
+    flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
+}
+
+.række-6{
+    display: flex;
+    flex-direction: row; /*Starter fra venstre side */
 }
 }
 
