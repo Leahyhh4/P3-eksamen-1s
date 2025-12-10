@@ -33,7 +33,7 @@
       display: flex; 
       flex-direction: row; 
       gap: 50px; /*Mlemmerum mellem mine ord i menulinjen*/
-      background-color: rgb(168, 25, 25); /*Kassen om manulinjens farve*/
+      background-color:#c31414; /*Kassen om manulinjens farve*/
       padding: 15px; /*højden på min kasse*/
       justify-content: center; /*At mine ord i menulinjen er i midten*/  
     }
@@ -56,7 +56,7 @@
     gap: 80px; /*Mlemmerum mellem mine ord i menulinjen*/
     padding: 20px; /*højden på min kasse*/
     justify-content: center; /*At mine ord i menulinjen er i midten*/  
-    background-color:rgb(168, 25, 25); /*Kassen om manulinjens farve*/
+    background-color:#c31414; /*Kassen om manulinjens farve*/
     color: white;
     }
   
@@ -150,7 +150,7 @@ body {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #ff0000;
+  color: #c31414;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -173,7 +173,7 @@ body {
 
 /*Prikkerne i buden af silde show skifter frave når musen er over*/
 .active, .dot:hover {
-  background-color: #fc0303;
+  background-color: #c31414;
 }
 /*Prikkerne i buden af silde show skifter frave når musen er over*/
 
@@ -513,7 +513,7 @@ body {
 /*Så knapperne har en rød kasse bag sig*/
 .cta-knap {
   display: inline-block;
-  background-color: #b3261e;   /* rød farve */
+  background-color: #c31414;   /* rød farve */
   color: white;                /* hvid tekst */
   padding: 8px 50px;          /* højde og bredde på knappen */
   border-radius: 10px;         /* bløde kanter */
@@ -528,7 +528,7 @@ body {
 
 /*Så knapperne hopper og ændre farve*/
 .cta-knap:hover {
-  background-color: #8f1d17;   /* mørkere rød */
+  background-color: #c31414;   /* mørkere rød */
   transform: scale(1.05);      /* lille zoom-effekt */
   transition: 0.1s; /*Hvor lang tid der skal gå før den skifter billede*/
 }
@@ -568,7 +568,7 @@ body {
   max-width: 500px;
   margin: 50px auto;          /* centrerer form og giver luft */
   padding: 30px;
-  background-color: #d51d1d;  /* hvid baggrund */
+  background-color: #c31414;  /* hvid baggrund */
   border-radius: 16px;        /* bløde hjørner */
   box-shadow: 0 10px 30px rgba(3, 3, 3, 0.1); /* blød skygge */
   display: flex;
