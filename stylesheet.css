@@ -167,170 +167,6 @@ body {
 }
 /*SLUT Bagrundfarven på hele siden body som vises på hjemmesiden*/
 
-/**********************************************SLUT GÆLDER PÅ ALLE 5 SIDER*********************************************************/
-
-                          
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  height: 200px;
-}
-/* Slideshow container */
-
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* De to pile man kan skifte billede på */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* De to pile man kan skifte billede på */
-
-
-
-/* placering af næste side knappen*/
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* placering af næste side knappen*/
-
-
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/*Teksten der står på billedet i slide show*/
-.text {
-  color: #ec1111;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/*Teksten der står på billedet i slide show*/
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #c31414;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Prikkerne i bunden af slide show*/
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #000000;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-/* Prikkerne i bunden af slide show*/
-
-
-/*Prikkerne i buden af silde show skifter frave når musen er over*/
-.active, .dot:hover {
-  background-color: #c31414;
-}
-/*Prikkerne i buden af silde show skifter frave når musen er over*/
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
-
-
-/********************************************HER STARTER INDEKSIDEN LEA!!!!**********************************************************/
-
-/*Min billede slide show i toppen*/
-.slideshow {
-  width: 100%;
-  height: 400px;         /* Højde på billedserien */
-  position: relative;
-  overflow: hidden;
-}
-
-.slideshow img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  animation: fadeSlider 12s infinite;
-}
-
-/* Timing for hvert billede */
-.slideshow img:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.slideshow img:nth-child(2) {
-  animation-delay: 4s;
-}
-
-.slideshow img:nth-child(3) {
-  animation-delay: 8s;
-}
-/* Timing for hvert billede */
-
-/* Fade animation */
-@keyframes fadeSlider {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  30%  { opacity: 1; }
-  40%  { opacity: 0; }
-  100% { opacity: 0; }
-}
-/* Fade animation */
-
-/*Min billede slide show i toppen*/
-
-
-
-
 
 
 /*START flexbox*/                                
@@ -363,9 +199,7 @@ body {
     height: auto;
     display: flex;       /* gør div'en til flex-container */
     justify-content: center; /* centrerer horisontalt */
-    align-items: center; 
-
-    
+    align-items: center;    
 }
 
 .billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
@@ -382,8 +216,6 @@ body {
     align-content: center;  /* center verticalt (top til bund)*/
     margin-left: 25%;
 }
-
-
 
 .billede-3{
     width: 100%;
@@ -620,6 +452,172 @@ body {
 }
 /*Så knapperne hopper og ændre farve*/
 
+/*SLUT flexbox*/   
+
+/**********************************************SLUT GÆLDER PÅ ALLE 5 SIDER*********************************************************/
+
+                          
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 200px;
+}
+/* Slideshow container */
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* De to pile man kan skifte billede på */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* De to pile man kan skifte billede på */
+
+
+
+/* placering af næste side knappen*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* placering af næste side knappen*/
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*Teksten der står på billedet i slide show*/
+.text {
+  color: #ec1111;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/*Teksten der står på billedet i slide show*/
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #c31414;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Prikkerne i bunden af slide show*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Prikkerne i bunden af slide show*/
+
+
+/*Prikkerne i buden af silde show skifter frave når musen er over*/
+.active, .dot:hover {
+  background-color: #c31414;
+}
+/*Prikkerne i buden af silde show skifter frave når musen er over*/
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+/********************************************HER STARTER INDEKSIDEN LEA!!!!**********************************************************/
+
+
+/*Min billede slide show i toppen*/
+.slideshow {
+  width: 100%;
+  height: 400px;         /* Højde på billedserien */
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeSlider 12s infinite;
+}
+
+/* Timing for hvert billede */
+.slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+  animation-delay: 8s;
+}
+/* Timing for hvert billede */
+
+/* Fade animation */
+@keyframes fadeSlider {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* Fade animation */
+
+/*Min billede slide show i toppen*/
+
+
+
 /********************************************HER SLUTTER INDEKSIDEN LEA!!!!**********************************************************/
    
 
@@ -648,6 +646,161 @@ body {
 
 
 /********************************************HER STARTER KONTAKT!!!!**********************************************************/
+
+:root{
+  --card-bg: #ffffff;
+  --card-radius: 14px;
+  --card-padding: 22px;
+  --avatar-size-desktop: 140px;
+  --avatar-size-mobile: 110px;
+  --accent: #c31414;
+  --shadow: 0 16px 40px rgba(0,0,0,0.08);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+/* Container centreret */
+.contact-card{
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 16px; /* lidt sideafstand udenpå */
+}
+
+/* Formular som kort */
+.mail-form{
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: calc(var(--card-padding) + var(--avatar-size-desktop) / 2) var(--card-padding) var(--card-padding);
+  box-shadow: var(--shadow);
+  overflow: visible;
+}
+
+/* Wrapper til avatar for at placere den absolut */
+.avatar-wrap{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%); /* halvt udenfor, halvt indenfor */
+  width: var(--avatar-size-desktop);
+  height: var(--avatar-size-desktop);
+  display: grid;
+  place-items: center;
+  pointer-events: none; /* så klik går igennem til formularfelter */
+}
+
+/* Selve billedet — rund */
+.avatar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;        /* rund form */
+  border: 4px solid #fff;    /* hvid kant mod kortet */
+  box-shadow: 0 8px 26px rgba(0,0,0,0.18);
+  display:block;
+  pointer-events: auto;
+}
+
+/* Indre form-layout — sørg for topmargen ikke overlapper overskrift */
+.form-inner{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* Typografi og felter */
+.mail-form h2{
+  margin: 0;
+  margin-top: 6px; /* lidt plads under avatar */
+  text-align: center;
+  font-size: 1.4rem;
+  color: #111;
+}
+
+.mail-form label{
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.mail-form input,
+.mail-form textarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Knap */
+.mail-form button[type="submit"]{
+  margin-top: 6px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--accent), #a10f0f);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+}
+
+/* Responsivt: mindre avatar og mindre top-padding */
+@media (max-width: 760px){
+  :root{
+    --avatar-size-desktop: var(--avatar-size-mobile);
+  }
+
+  .mail-form{
+    padding: calc(var(--card-padding) + var(--avatar-size-mobile) / 2) 16px var(--card-padding);
+  }
+
+  .avatar-wrap{
+    width: var(--avatar-size-mobile);
+    height: var(--avatar-size-mobile);
+  }
+
+  .mail-form button[type="submit"]{
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+
+.contact-card {
+  max-width: 980px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 24px;
+}
+.avatar{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;      /* sikrer kvadratisk form */
+  object-fit: cover;      /* beskærer motivet pænt */
+  border-radius: 12px;    /* bløde hjørner — firkantet look */
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border: 3px solid #fff;
+}
+
+/* genbrug evt. din .mail-form styling her */
+.mail-form { /* behold dine varianter */ 
+}
+
+/* responsive: stabl på small screens */
+@media (max-width: 760px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .avatar { margin: 0 auto; }
+  .mail-form button { width: 100%; }
+}
+
 
 /* Hele mail formularen */
 .mail-form {
@@ -690,4 +843,5 @@ body {
 /* Når man klikker i feltet bliver rammen den farve */
 
 /* Send knappen */
+
 /********************************************HER SLUTTER KONTAKT!!!!**********************************************************/
