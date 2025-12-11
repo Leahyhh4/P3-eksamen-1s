@@ -11,30 +11,29 @@
         <meta charset="utf-8">     <!--Dette skirve så man kan skirve Æ,Ø,Å -->
         <link rel="stylesheet" href="stylesheet.css">      <!--Dette kobler HTML til CSS filen-->
         <meta name="viewport" content="width=device-width, inital-scale=1.0">     <!--Det er data, infomation om date - de griver info til browser men bruger / søgemaskine-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Så den ved hvor den skal hente mine ikoner jeg brugt i min footer fra-->
+    </head>     <!--Overskift man IKKE kan se på siden skirves i en head -->
     </head>     <!--Overskift man IKKE kan se på siden skirves i en head -->
 <!--=============================================DETTE MAN IKKE SER PÅ SIDEN I BODY =======================================================================-->
     
 <body> <!--Body alt man ser på hjemmesiden som er synelig-->
 
-<!--======================================================TOP BAREN =======================================================================-->
-       <div id="white-top">
-          <p id="white-top-text"><a blank="_self" href="index.html"><b>LHYHH</b></a></p> <!--At teksten bliver tyk-->
-       </div>
-<!--======================================================TOP BAREN =======================================================================-->
-
 
 
 <!--======================================================NAVIGATIONS MENU LINJE =======================================================================-->
-        <div id="navigation">     <!--Div giver sturktur, at opdle tingene og Menulinje id = unik -->
+<div id="navigation">     <!--Div giver sturktur, at opdle tingene og Menulinje id = unik -->
+
+          <p id="white-top"><a blank="_self" href="index.html"><b>LHYHH</b></a></p> <!--At teksten bliver tyk b --> <!--Mir logo er et link og ligger i menu baren-->
+       
 
                     <!-- Du indsætter dit link i href'#...'' -->
-             <h3><a class="nav-link" href="om-mig.html">Om mig</a></h3>      <!--Om mig-->
-             <h3><a class="nav-link" href="produkter.html">Produkter</a></h3>       <!--Produkter-->
-             <h3><a class="nav-link" href="toolbox.html">Værktøjer</a></h3>       <!--Værktøjer-->
-             <h3><a class="nav-link" href="kontakt.html">Kontakt info</a></h3>      <!--kontakt info-->
+             <h3><a class="nav-link" href="om-mig.html">Om mig</a></h3>      <!--Om mig, link så det skifter farve -->
+             <h3><a class="nav-link" href="produkter.html">Produkter</a></h3>       <!--Produkter, link så det skifter farve-->
+             <h3><a class="nav-link" href="toolbox.html">Værktøjer</a></h3>       <!--Værktøjer,link så det skifter farve-->
+             <h3><a class="nav-link" href="kontakt.html">Kontakt info</a></h3>      <!--kontakt info, link så det skifter farve-->
 
         </div>     <!--Div giver sturktur, at opdle tingene -->
+
 <!--======================================================NAVIGATIONS MENU LINJE =======================================================================-->
 
 <!--======================================================FLEXBOX =======================================================================-->
@@ -75,36 +74,17 @@
 
 
 <!--======================================================FOOTER =======================================================================-->
-<div id="Footer">
-          <p id="Footer-teskt">
-            <a href="lhyhh.chdk@gmail.com" class="mail-link">
-    <i class="fa-solid fa-envelope"></i>
-    <span>lhyhh.chdk@gmail.com</span>
-  </a>
 
-  <a href="tel:+4529920782" class="phone-link">
-    <i class="fa-solid fa-phone"></i>
-    <span>+45 29920782</span>
-  </a>
+<footer class="site-footer" aria-label="Sidefod">
+  <div class="footer-row">
+    <div class="footer-box"><i class="fa-solid fa-envelope"></i><small>lhyhh.chdk@gmail.com</small></div>
+    <div class="footer-box"><i class="fa-solid fa-phone"></i><small>+45 29920782</small></div>
+    <div class="footer-box"><i class="fa-brands fa-instagram"></i><small>photobylh</small></div>
+    <div class="footer-box"><i class="fa-brands fa-facebook"></i><small>Lea Hansen</small></div>
+    <div class="footer-box"><i class="fa-brands fa-linkedin"></i><small>Lea Hansen</small></div>
+  </div>
+</footer>
 
-
-  <a href="https://instagram.com/ditbrugernavn" target="_blank" class="insta-link">
-    <i class="fa-brands fa-instagram"></i>
-    <span>photobylh</span>
-  </a>
-
-
-  <a href="https://facebook.com/ditnavn" target="_blank" class="social">
-    <i class="fa-brands fa-facebook"></i>
-    <span>Lea Hansen</span>
-  </a>
-
-  <a href="https://linkedin.com/in/ditnavn" target="_blank" class="social">
-    <i class="fa-brands fa-linkedin"></i>
-    <span>Lea Hansen</span>
-  </a>
-
-</div>
 <!--======================================================FOOTER =======================================================================-->
 
 
