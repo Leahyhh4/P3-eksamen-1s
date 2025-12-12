@@ -22,7 +22,7 @@
 
 /*Mit logo, link, home i menulinjen*/
  #white-top { 
-    margin-left: none;
+    margin-left: 0;
     color: #c31414;
     }
 /*Mit logo, link, home i menu linjen*/
@@ -58,7 +58,7 @@
   background:#c31414;          /* baggrundsfarve */
   color: #000000;               /* tekstfarve */
   padding: 28px 18px;        /* lodret og vandret padding */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  
 }
 /* Footer container */
 
@@ -310,7 +310,7 @@ body {
     color: rgb(0, 0, 0);
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 25%px;
+    margin-left: 25%;
 }
 
 /* Her starter Hvordan flex skal opføere sig */
@@ -440,7 +440,7 @@ body {
   font-weight: bold;
   text-decoration: none;       /* fjerner understregning */
   text-align: center;
-  margin-left: none; /*så den røde kasse i bruden af call to ation knapperne er lige med overskiften til venstre med den mænge margin fra venstre side jeg har valgt*/
+  margin-left: 0; /*så den røde kasse i bruden af call to ation knapperne er lige med overskiften til venstre med den mænge margin fra venstre side jeg har valgt*/
 }
 /*Så knapperne har en rød kasse bag sig*/
 
