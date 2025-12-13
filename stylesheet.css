@@ -51,103 +51,34 @@
 /* SLUT Navigationslinje menu*/
 
 
-/*HER STARTER MIN FOOTER FLEX BOX*/
-/* Footer container */
-.site-footer{
-  background:#c31414;          /* baggrundsfarve */
-  color: #000000;               /* tekstfarve */
-  padding: 28px 18px;        /* lodret og vandret padding */
-  
-}
-/* Footer container */
+/*Overskiften*/
 
-/* Flex-row med 5 bokse */
-.footer-row{
-  display: flex;
-  gap: 18px;                 /* afstand mellem boksene */
-  justify-content: center;   /* centrerer hele rækken */
-  align-items: stretch;      /* gør boksene samme højde */
-  flex-wrap: wrap;           /* bryder til næste linje ved små skærme */
-  max-width: 1200px;
-  margin: 0 auto 18px;       /* centrerer og giver bundafstand */
-}
-
-/*Footer link*/
-.footer-row a{
-  color: #000000; /*Alle links i footeren er sorte*/
-}
-
-
-/* Flex-row med 5 bokse */
-
-/* Hver box */
-.footer-box{
-  background:#ffffff;
-  padding: 18px;
-  border-radius: 8px;
-  flex: 1 1 180px;           /* fleksibel: vokser, kan krympe, basis 180px */
-  min-width: 140px;          /* mindste bredde før den bryder */
-  box-sizing: border-box;
+.flex-overskrift {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  margin: 100px 0 40px;
 }
-/* Hver box */
 
-/* Tekstvariationer */
-.footer-box small{
-  opacity: 0.85;
-  font-size: 0.95rem;
+.flex-overskrift h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
 }
-/* Tekstvariationer */
 
-/* Footer bundlinje */
-.footer-bottom{
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding-top: 12px;
-  opacity: 0.9;
-  font-size: 0.9rem;
+.flex-overskrift h1::after {
+  content: "";
+  display: block;
+  width: 150px;          /* længde på stregen */
+  height: 3px;          /* tykkelse */
+  background-color: #000; /* farve */
+  margin: 10px auto 0;
 }
-/* Footer bundlinje */
 
-/* Hover / fokus effekt (hvis boksene er interaktive) */
-.footer-box:hover,
-.footer-box:focus-within{
-  transform: translateY(-4px);
-  transition: transform 180ms ease;
-  background: rgba(255,255,255,0.07);
-}
-/* Hover / fokus effekt (hvis boksene er interaktive) */
-
-/* Små skærme: mindre padding og større wrap */
-@media (max-width: 640px){
-  .site-footer{ padding: 20px 12px; }
-  .footer-row{ gap: 12px; }
-  .footer-box{ padding: 14px; flex-basis: 45%; } /* ca. 2 per række */
-
-
-#navigation {
-      display: flex; 
-      flex-direction: column; /*Når skærmen bliver mindre så flytter menuinjen sig fra venstre til lodret*/
-      }
-
-}
-/* Små skærme: mindre padding og større wrap */
-
-/* Meget lille skærm: 1 boks pr række */
-@media (max-width: 360px){
-  .footer-box{ flex-basis: 100%; }
-}
-/* Meget lille skærm: 1 boks pr række */
+/*Overskiften*/
 
 
 
 
 
-/*HER SLUTTER MIN FOOTER FLEX BOX*/
 
 
 /*START*/
@@ -169,7 +100,7 @@ body {
 
 
 
-/*START flexbox*/                                
+/*START FLEXBOX MIDTEN*/                                
 
 .billede-1{
     width: 100%;
@@ -452,7 +383,105 @@ body {
 }
 /*Så knapperne hopper og ændre farve*/
 
-/*SLUT flexbox*/   
+/*SLUT FLEXBOX MIDTEN*/   
+
+
+
+/*HER STARTER MIN FOOTER FLEX BOX*/
+/* Footer container */
+.site-footer{
+  background:#c31414;          /* baggrundsfarve */
+  color: #000000;               /* tekstfarve */
+  padding: 28px 18px;        /* lodret og vandret padding */
+  
+}
+/* Footer container */
+
+/* Flex-row med 5 bokse */
+.footer-row{
+  display: flex;
+  gap: 18px;                 /* afstand mellem boksene */
+  justify-content: center;   /* centrerer hele rækken */
+  align-items: stretch;      /* gør boksene samme højde */
+  flex-wrap: wrap;           /* bryder til næste linje ved små skærme */
+  max-width: 1200px;
+  margin: 0 auto 18px;       /* centrerer og giver bundafstand */
+}
+
+/*Footer link*/
+.footer-row a{
+  color: #000000; /*Alle links i footeren er sorte*/
+}
+
+
+/* Flex-row med 5 bokse */
+
+/* Hver box */
+.footer-box{
+  background:#ffffff;
+  padding: 18px;
+  border-radius: 8px;
+  flex: 1 1 180px;           /* fleksibel: vokser, kan krympe, basis 180px */
+  min-width: 140px;          /* mindste bredde før den bryder */
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+/* Hver box */
+
+/* Tekstvariationer */
+.footer-box small{
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+/* Tekstvariationer */
+
+/* Footer bundlinje */
+.footer-bottom{
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 12px;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+/* Footer bundlinje */
+
+/* Hover / fokus effekt (hvis boksene er interaktive) */
+.footer-box:hover,
+.footer-box:focus-within{
+  transform: translateY(-4px);
+  transition: transform 180ms ease;
+  background: rgba(255,255,255,0.07);
+}
+/* Hover / fokus effekt (hvis boksene er interaktive) */
+
+/* Små skærme: mindre padding og større wrap */
+@media (max-width: 640px){
+  .site-footer{ padding: 20px 12px; }
+  .footer-row{ gap: 12px; }
+  .footer-box{ padding: 14px; flex-basis: 45%; } /* ca. 2 per række */
+
+
+#navigation {
+      display: flex; 
+      flex-direction: column; /*Når skærmen bliver mindre så flytter menuinjen sig fra venstre til lodret*/
+      }
+
+}
+/* Små skærme: mindre padding og større wrap */
+
+/* Meget lille skærm: 1 boks pr række */
+@media (max-width: 360px){
+  .footer-box{ flex-basis: 100%; }
+}
+/* Meget lille skærm: 1 boks pr række */
+
+
+/*HER SLUTTER MIN FOOTER FLEX BOX*/
+
 
 /**********************************************SLUT GÆLDER PÅ ALLE 5 SIDER*********************************************************/
 
