@@ -474,7 +474,7 @@ body {
 /* Små skærme: mindre padding og større wrap */
 
 /* Meget lille skærm: 1 boks pr række */
-@media (max-width: 360px){
+@media (max-width: 600px){
   .footer-box{ flex-basis: 100%; }
 }
 /* Meget lille skærm: 1 boks pr række */
