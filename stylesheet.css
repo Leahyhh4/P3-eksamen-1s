@@ -460,7 +460,7 @@ body {
 
 /* Små skærme: mindre padding og større wrap */
 @media (max-width: 640px){
-  .site-footer{ padding: 20px 12px; }
+  .site-footer{ padding: 28px 18px; }
   .footer-row{ gap: 12px; }
   .footer-box{ padding: 14px; flex-basis: 45%; } /* ca. 2 per række */
 
@@ -699,7 +699,7 @@ body {
 .contact-card{
   max-width: 760px;
   margin: 40px auto;
-  padding: 0 16px; /* lidt sideafstand udenpå */
+  padding: 24px 16px; /* lidt sideafstand udenpå */
 }
 
 /* Formular som kort */
@@ -710,6 +710,7 @@ body {
   padding: calc(var(--card-padding) + var(--avatar-size-desktop) / 2) var(--card-padding) var(--card-padding);
   box-shadow: var(--shadow);
   overflow: visible;
+  margin: 50px auto;
 }
 
 /* Wrapper til avatar for at placere den absolut */
