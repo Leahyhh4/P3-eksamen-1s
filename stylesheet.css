@@ -9,8 +9,8 @@
 
 
 /* START på Det gør siden responstiv - tilpasset til flere størlser skræme */ 
-    @media screen and (min-width: 750px) { /*Så den ændre sig af sig selv - 750px er en mobil den mindste skærm*/
-      .navigation ul {
+    @media screen and (min-width: 768px) { /*Så den ændre sig af sig selv - 750px er en mobil den mindste skærm*/
+      .navigation ul { /* Så jeg vælger en spicifik en */
         flex-wrap: nowrap; /*så den bevæger sig naturligt rundt når skærmens størlse ændre sig*/
              }
     }
@@ -22,18 +22,18 @@
 
 /*Mit logo, link, home i menulinjen*/
  #white-top { 
-    margin-left: 0;
-    color: #c31414;
+    margin-left: 0; /* At den fylder helt ud til venstre der ikke nogte luft/space */
+    color: #c31414; /* Farven på min top bar*/
     }
 /*Mit logo, link, home i menu linjen*/
 
 #white-top a {
-    color: #ffffff;
+    color: #ffffff; /* At alle link på siden skal være hvide - a gør at de er alle links */
     }
 
     #navigation {
-      display: flex; 
-      flex-direction: row; 
+      display: flex; /* At det er mere bevægelig */
+      flex-direction: row; /*Flexbox, der arrangerer de fleksible elementer vandret (fra venstre mod højre */
       gap: 50px; /*Mlemmerum mellem mine ord i menulinjen*/
       background-color:#c31414; /*Kassen om manulinjens farve*/
       padding: 30px; /*højden på min kasse*/
@@ -41,7 +41,7 @@
     }
 
     .nav-link { /*så mine ord i menulinjen er links*/
-     text-decoration: none; 
+     text-decoration: none; /* Fjerner standardteksteffekter, mest almindeligt bruges den til at fjerne den blå understregning fra hyperlinks */ 
      color: black; /*Mine ord i min menulinjes farve*/
     }
 
@@ -54,42 +54,42 @@
 /*Overskiften*/
 
 .flex-overskrift {
-  text-align: center;
-  margin: 100px 0 40px;
+  text-align: center; /* Gør at overskiften står i midten */
+  margin: 100px 0 40px; /* Hvor på siden overskiften skal være */
 }
 
 .flex-overskrift h1 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 15px;
+  position: relative; /* Flyt elementet i forhold til dets standardplacering */
+  display: inline-block; /* At overskiften flytter sig mere flydende rundt */
+  padding-bottom: 15px; /* Hvor meget luft der er mellem overskiften og flex boksen i midten */
 }
 
 .flex-overskrift h1::after {
-  content: "";
-  display: block;
-  width: 150px;          /* længde på stregen */
-  height: 3px;          /* tykkelse */
+  content: ""; /* Hvor understegen på overskiften skal være */
+  display: block; /* At overskiften flytter sig vider ned på ny linje hvis der ikke er plads */
+  width: 150px; /* længde på understregen */
+  height: 3px; /* tykkelse på understregen */
   background-color: #000; /* farve */
-  margin: 10px auto 0;
+  margin: 10px auto 0; /* Hvor meget luft der er fra venstre og til overskiften - auto gør den aftomatisk gør det fra højer */
 }
 
 /*Overskiften*/
 
 
-/*START*/
+/*START at browsere kan beregne elemternes størlse */
 * { 
-  box-sizing: border-box; 
+  box-sizing: border-box; /* Er en CSS-kode, der sætter standardindstillinger for, hvordan browsere beregner elementers størrelse */
   margin:0; padding:0; 
 }
-/*SLUT*/
+/*SLUT ar browersre kan begrne elemternes strølse */
 
 
 
 /*STRAT Bagrundfarven på hele siden body som vises på hjemmesiden*/
 body { 
-  background: rgb(254, 254, 254); 
-  font-family: sans-serif; 
-  padding:0; 
+  background: rgb(254, 254, 254); /* Bagrundsfarven på hele body */
+  font-family: sans-serif; /* Så der ikke små fødder på mine buksatver som bruges i min body */
+  padding:0; /* At bagundsfarven fylder det hele, der skal ikke være luft/space omkring */
 }
 /*SLUT Bagrundfarven på hele siden body som vises på hjemmesiden*/
 
@@ -97,57 +97,58 @@ body {
 /*START FLEXBOX MIDTEN*/    
 
 .billede-1{
-    width: 100%;
-    height: auto;
-    display: flex;       /* gør div'en til flex-container */
+    width: 100%; /* At billdet fylder helt ud til kanterne 100% fra margin til margin i boksen */
+    height: auto; /* At højden er aoutomatik og flytter sig af sig selv */
+    display: flex;   /* gør div'en til flex-container */
     justify-content: center; /* centrerer horisontalt */
-    align-items: center; 
+    align-items: center; /* Billede er i midten centrum */    
 }
 
+
 .billede-1 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    width: 430px;
-    height: 430px;        /*Den her laver runde hjørner på billede*/
+    width: 430px; /* Bredten på billedet */
+    height: 430px; /* Højden på illedet */
 } 
 
 .tekstbox-1 {
-    width: 100%;
-    height: 500px;
-    color: rgb(0, 0, 0);
+    width: 100%; /* Bredten på tekst boksen */
+    height: 500px; /* Højden på tekst boksen */
+    color: rgb(0, 0, 0); /* Farven på teksten i teks boksen */
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 80px;
+    margin-left: 80px; /* At der er noget space fra margin af hele flex boksen og ind til at teksten starter */
 }
 
 .billede-2{
-    width: 100%;
-    height: auto;
-    display: flex;       /* gør div'en til flex-container */
+    width: 100%; /* At billdet fylder helt ud til kanterne 100% fra margin til margin i boksen */
+    height: auto; /* At højden er aoutomatik og flytter sig af sig selv */
+    display: flex; /* gør div'en til flex-container */
     justify-content: center; /* centrerer horisontalt */
-    align-items: center;    
+    align-items: center; /* Billede er i midten centrum */    
 }
 
 .billede-2 img{ /*  Den her bruger man kun til at rette dirrkti på evt. billede man kan også style mere end her*/
-    width: 430px;
-    height: 430px;
+    width: 430px; /* Bredten på billedet */
+    height: 430px; /* Højden på illedet */
 }
 
 .tekstbox-2{
-    width: 100%;
-    height: 500px;
-    color: rgb(0, 0, 0);
+    width: 100%; /* Bredten på tekst boksen */
+    height: 500px; /* Højden på tekst boksen */
+    color: rgb(0, 0, 0); /* Farven på teksten i teks boksen */
     text-align: left;    /* teksten starter fra venstre*/
     align-content: center;  /* center verticalt (top til bund)*/
-    margin-left: 25%;
+    margin-left: 25%; /* At teksteb begynder ud fra billedets kant fra billedet over og under - men virker kun på pc */
 }
 
 /* Her starter Hvordan flex skal opføere sig */
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Gør det mere bevægelig */
+    flex-direction: column; /* At boksene er lodret og ikke vandret */
 }
 
-@media (min-width: 600px){ /*Dette gør at hvis skærmen bliver større end 600px så ændre opsætningen sig på hjemmeside*/
+@media (min-width: 768px){ /*Dette gør at hvis skærmen bliver større end 768px så ændre opsætningen sig på hjemmeside*/
 
 
 /*felsterne inde i flexbox*/
@@ -174,102 +175,35 @@ body {
     width: 50%; /*bredten på den usyndelige flex box kasse*/
     height: 500px; /*Højde på den usyndlige flex box kasse*/
 }
-
-.billede-3{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.tekstbox-3{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.billede-4{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.tekstbox-4{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.billede-5{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.tekstbox-5{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.billede-6{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
-
-.tekstbox-6{
-    background-color: rgb(255, 255, 255); /*bagundsfraven - som er hvid så man ikke kan se den med mindre man giver den en farve*/
-    width: 50%; /*bredten på den usyndelige flex box kasse*/
-    height: 500px; /*Højde på den usyndlige flex box kasse*/
-}
 /*felsterne inde i flexbox*/
 
 
-.række-1{
-    display: flex;
+.række-1{ /* Flex boksen hvor tekst er til venstre og billede/video til højer */
+    display: flex; /* Gør det mere felxibel og bevæelig */
     flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
 
 }
 
-.række-2{
-    display: flex;
-    flex-direction: row; /*Starter fra venstre side */
-}
-
-.række-3{
-    display: flex;
-    flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
-}
-
-.række-4{
-    display: flex;
-    flex-direction: row; /*Starter fra venstre side */
-}
-.række-5{
-    display: flex;
-    flex-direction: row-reverse; /*Så den skifter mellem siderne - modsat af den anden*/
-}
-
-.række-6{
-    display: flex;
+.række-2{ /* Flex boksen hvor teksten er til højer og billedet/video til venstre */
+    display: flex; /* Letter at flytte rundt på tingene */
     flex-direction: row; /*Starter fra venstre side */
 }
 }
 
-/*Så knapperne har en rød kasse bag sig*/
+/*Så knapperne har en rød kasse bag sig i flexboksen */
 .cta-knap {
   display: inline-block;
-  background-color: #c31414;   /* rød farve */
-  color: white;                /* hvid tekst */
-  padding: 8px 50px;          /* højde og bredde på knappen */
-  border-radius: 10px;         /* bløde kanter */
-  font-size: 24px;             /* tekststørrelse */
+  background-color: #c31414;/* rød farve */
+  color: white; /* hvid tekst */
+  padding: 8px 50px; /* højde og bredde på knappen */
+  border-radius: 10px; /* bløde kanter */
+  font-size: 24px; /* tekststørrelse */
   font-weight: bold;
-  text-decoration: none;       /* fjerner understregning */
+  text-decoration: none; /* fjerner understregning */
   text-align: center;
   margin-left: 0; /*så den røde kasse i bruden af call to ation knapperne er lige med overskiften til venstre med den mænge margin fra venstre side jeg har valgt*/
 }
-/*Så knapperne har en rød kasse bag sig*/
+/*Så knapperne har en rød kasse bag sig i flexboksen */
 
 
 /*Så knapperne hopper og ændre farve*/
@@ -315,65 +249,61 @@ body {
 
 /* Hver box */
 .footer-box{
-  background:#ffffff;
-  padding: 18px;
-  border-radius: 8px;
-  flex: 1 1 180px;           /* fleksibel: vokser, kan krympe, basis 180px */
-  min-width: 140px;          /* mindste bredde før den bryder */
-  box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  background:#ffffff; /* Brundsfraven er hvid */
+  padding: 18px; /* Luft mellem elemtet og kanten uden om */
+  border-radius: 8px; /* At der er bløde kanter */
+  flex: 1 1 180px; /* fleksibel: vokser, kan krympe, basis 180px */
+  min-width: 140px; /* mindste bredde før den bryder */
+  box-sizing: border-box; /* Brede og højde i box strølsen */
+  text-align: center; /* At teksten i knappen i footeren er i midsten */
+  display: flex; /* Gør det mere flexibel og bevægelig */
+  flex-direction: column; /* Boksne er lodrette og IKKE vandrette */
+  justify-content: center; /* At alle elemter er i midten */
+  gap: 8px; /* Mellemrum mellem elemterne i footeren */
 }
 /* Hver box */
 
-/* Tekstvariationer */
-.footer-box small{
-  opacity: 0.85;
-  font-size: 0.95rem;
+
+/* Tekstvariationer – styling af små tekster i footer */
+.footer-box small {  /* Vælger <small>-elementer inde i .footer-box */
+  opacity: 0.85; /* Gør teksten lidt gennemsigtig / mindre fremtrædende */
+  font-size: 0.95rem; /* Gør teksten en smule mindre end standard tekst */
 }
-/* Tekstvariationer */
+/* Tekstvariationer – styling af små tekster i footer */
 
 /* Footer bundlinje */
 .footer-bottom{
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding-top: 12px;
-  opacity: 0.9;
-  font-size: 0.9rem;
+  text-align: center; /* Gør at elemeterne er i mindten */
+  border-top: 1px solid rgba(255,255,255,0.06); /* Definere udseendet af en elements øverste afgrænsning (f.eks. farve, tykkelse, stil) */
+  padding-top: 12px; /* Afstanden i toppen af footeren */
+  opacity: 0.9; /* Uigennemsigtighed tid på kanpperne */
+  font-size: 0.9rem; /* Skriftstørrelse */
 }
 /* Footer bundlinje */
 
 /* Hover / fokus effekt (hvis boksene er interaktive) */
-.footer-box:hover,
+.footer-box:hover, /* Gør at knapperne hopper når musen er over */
 .footer-box:focus-within{
   transform: translateY(-4px);
-  transition: transform 180ms ease;
-  background: rgba(255,255,255,0.07);
+  transition: transform 180ms ease; /* Overgangen når man har musen over knappen */
+  background: rgba(255,255,255,0.07); /* Gør at den fater ud når man har musen på den */
 }
 /* Hover / fokus effekt (hvis boksene er interaktive) */
 
 /* Små skærme: mindre padding og større wrap */
 @media (max-width: 780px){
-  .site-footer{ padding: 20px 12px; }
-  .footer-row{ gap: 12px; }
+  .site-footer{ padding: 20px 12px; } /* Afstedn i top/bund og luft mellem elementerne */
+  .footer-row{ gap: 12px; } /* Mellemrum mellen elementerne i footeren */
   .footer-box{ padding: 14px; flex-basis: 45%; } /* ca. 2 per række */
 
 
 #navigation {
-      display: flex; 
+      display: flex; /* Gør det mere felxibel og bevæeligt */
       flex-direction: column; /*Når skærmen bliver mindre så flytter menuinjen sig fra venstre til lodret*/
       }
 
 }
 /* Små skærme: mindre padding og større wrap */
-
-/* Meget lille skærm: 1 boks pr række */
-
-/* Meget lille skærm: 1 boks pr række */
-
 
 /*HER SLUTTER MIN FOOTER FLEX BOX*/
 
