@@ -47,19 +47,29 @@
 
 <!-- HTML: kontaktkort med kvadratisk avatar ved siden af formularen -->
 
+<div class="kontakt">
+  <form action="action_page.php">
 
-<form action="mailto:dinmail@gmail.com" method="post" enctype="text/plain" class="mail-form">
-    <label>Navn:</label>
-    <input type="text" name="Navn" required>
+    <label for="navn">Navn</label>
+    <input type="text" id="ditnavn" name="ditnavn" placeholder="Dit navn">
 
-    <label>Email:</label>
-    <input type="email" name="Email" required>
+    <label for="dinmail">Mail</label>
+    <input type="text" id="dinmail" name="dinmail" placeholder="Din mail">
 
-    <label>Besked:</label>
-    <textarea name="Besked" rows="5" required></textarea>
+    <label for="emne">Emne</label>
+    <select id="emne" name="emne">
+      <option value="Reel/video">Reel/video</option>
+      <option value="Billede/produktbillede">Billede/produktbillede</option>
+      <option value="Design/markedsføring">Design/markedeføring</option>
+    </select>
 
-    <button type="submit">Send</button> <!--Der vises en send knap i bunden-->
-</form>
+    <label for="Besked">Besked</label>
+    <textarea id="Besked" name="Besked" placeholder="Skriv en besked" style="height:200px"></textarea>
+
+    <input type="submit" value="SEND">
+
+  </form>
+</div>
 <!--======================================================MAIL FORMULAR BOXSEN =======================================================================-->
 
 <br>
