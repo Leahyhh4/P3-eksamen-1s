@@ -8,7 +8,7 @@
         <title>Præsentationsportfolio</title>     <!--Min overskift man IKKE kan se på siden -->
         <meta charset="utf-8">     <!--Dette skirve så man kan skirve Æ,Ø,Å -->
         <link rel="stylesheet" href="stylesheet.css">      <!--Dette kobler HTML til CSS filen-->
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">     <!--Det er data, infomation om date - de griver info til browser men bruger / søgemaskine-->
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">     <!--width=device-width: siden følger bredden på brugerens skærm (fx mobil, tablet, PC)--> <!--Det er data, infomation om date - de griver info til browser men bruger / søgemaskine / siden zoomes ikke ind eller ud når den indlæses første gang-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Så den ved hvor den skal hente mine ikoner jeg brugt i min footer fra-->
     </head>     <!--Overskift man IKKE kan se på siden skirves i en head -->
 <!--=============================================DETTE MAN IKKE SER PÅ SIDEN I BODY =======================================================================-->
@@ -33,62 +33,62 @@
 
 <!--Sildeshow med billeder-->
 <div class="slideshow">
-  <img src="image/some-billede.webp" class="slide" alt="billede af some reels videos">
-  <img src="image/billede-billede.webp" class="slide" alt="billede af billeder">
-  <img src="image/bag-processen.webp" class="slide" alt="billede af produkt billeder">
+  <img src="image/some-billede.webp" class="slide" alt="billede af some reels videos"> <!-- Første billede der bluver vist i slideshow-->
+  <img src="image/billede-billede.webp" class="slide" alt="billede af billeder"> <!-- Anden billede der bluver vist i slideshow-->
+  <img src="image/bag-processen.webp" class="slide" alt="billede af produkt billeder"> <!-- Sidste billede der bluver vist i slideshow-->
 </div>
 <!--Sildeshow med billeder-->
 
 <!--======================================================FLEXBOX =======================================================================-->
 <br>
 <br>
-<div class="container" >
+<div class="container" > <!-- Min div contenere, så opdeler man sektionerne på hjemmesiden. Så kan man lave css på dem -->
 
-    <div class="række-1">
-        <div class="billede-1"><img src="image/ommig-billede.png" alt="Billede af mig"></div>
-        <div class="tekstbox-1"> 
-        <h2>Om Mig:</h2>
-        <p>Her kan du læse om hvem jeg er</p>
-        <br>
-        <br>
-        <h1><a href="om-mig.html" class="cta-knap">Om mig</a></h1>   
+    <div class="række-1"> <!-- Første box i min flexboxs / teskt og billede  -->
+        <div class="billede-1"><img src="image/ommig-billede.webp" alt="Billede af mig"></div> <!-- Billedet som vistet og billede teksten-->
+        <div class="tekstbox-1"> <!-- Teksten der står ved siden af billedet -->
+        <h2>Om Mig:</h2> <!-- Overskiften til mine billede i tekst boksen -->
+        <p>Her kan du læse om hvem jeg er</p> <!-- Min tesks som står under overskiften i tekst boksen -->
+        <br> <!-- Mellemrum -->
+        <br> <!-- Mellemrum -->
+        <h1><a href="om-mig.html" class="cta-knap">Om mig</a></h1> <!-- Et link, så knappen fører til om mig siden -->
         
         </div>
     </div>
 
-    <div class="række-2">
-        <div class="billede-2"> <img src="image/6-produkterfx-billede.webp" alt="Billede af mig med produkter"></div>
-        <div class="tekstbox-2">
-          <h2>Produkter:</h2> 
-          <p>Her kan du læse om hvilken produkter jeg har lavet</p>
-          <br>
-          <br>
-          <h1><a href="produkter.html" class="cta-knap">Produkter</a></h1>   
+    <div class="række-2"> <!-- Anden box i min flexboxs / billede og tekst -->
+        <div class="billede-2"> <img src="image/6-produkterfx-billede.webp" alt="Billede af mig med produkter"></div> <!-- Billedet som vistet og billede teksten-->
+        <div class="tekstbox-2"> <!-- Teksten der står ved siden af billedet -->
+          <h2>Produkter:</h2> <!-- Overskiften til mine billede i tekst boksen -->
+          <p>Her kan du læse om hvilken produkter jeg har lavet</p> <!-- Min tesks som står under overskiften i tekst boksen -->
+          <br>  <!-- Mellemrum -->
+          <br>  <!-- Mellemrum -->
+          <h1><a href="produkter.html" class="cta-knap">Produkter</a></h1> <!-- Et link, så knappen føere til produktsiden -->
         
         </div>
     </div>
 
-    <div class="række-1">
-      <div class="billede-1"><img src="image/pege-op-billede.png" alt="Billede af mig der peger til værtøjskasse"> </div>
-      <div class="tekstbox-1">
-        <h2>Værktøjskasse:</h2> 
-        <P>Her kan du læse om hvilken værtøjer jeg har med i rygsækken</P>
-        <br>
-        <br>
-        <h1><a href="toolbox.html" class="cta-knap">Værktøjskasse</a></h1>   
+    <div class="række-1"> <!-- Første box i min flexboxs / teskt og billede  -->
+      <div class="billede-1"><img src="image/pege-op-billede.webp" alt="Billede af mig der peger til værtøjskasse"> </div> <!-- Billedet som vistet og billede teksten-->
+      <div class="tekstbox-1"> <!-- Teksten der står ved siden af billedet -->
+        <h2>Værktøjskasse:</h2>  <!-- Overskiften til mine billede i tekst boksen -->
+        <P>Her kan du læse om hvilken værtøjer jeg har med i rygsækken</P> <!-- Min tesks som står under overskiften i tekst boksen -->
+        <br> <!-- Mellemrum -->
+        <br> <!-- Mellemrum -->
+        <h1><a href="toolbox.html" class="cta-knap">Værktøjskasse</a></h1>  <!-- Et link, så knappen føere til værktøjskassen -->
         
       
       </div>
     </div>
   
-    <div class="række-2">
-      <div class="billede-2"> <img src="image/kontakt-billede.webp" alt="Billede af mig der ringer kontakt "> </div>
-      <div class="tekstbox-2">
-        <h2>Kontakt:</h2> 
-        <p>Her kan du kontakte mig</p>
-        <br>
-        <br>
-        <h1><a href="kontakt.html" class="cta-knap">Kontakt</a></h1>   
+    <div class="række-2"> <!-- Anden box i min flexboxs / billede og tekst -->
+      <div class="billede-2"> <img src="image/kontakt-billede.webp" alt="Billede af mig der ringer kontakt "> </div> <!-- Billedet som vistet og billede teksten-->
+      <div class="tekstbox-2"> <!-- Teksten der står ved siden af billedet -->
+        <h2>Kontakt:</h2>  <!-- Overskiften til mine billede i tekst boksen -->
+        <p>Her kan du kontakte mig</p> <!-- Min tesks som står under overskiften i tekst boksen -->
+        <br> <!-- Mellemrum -->
+        <br> <!-- Mellemrum -->
+        <h1><a href="kontakt.html" class="cta-knap">Kontakt</a></h1>  <!-- Et link, så knappen føere til kontakt -->
         
       </div>
     </div>
@@ -102,19 +102,19 @@
 
 <!--======================================================FOOTER =======================================================================-->
 
-<footer class="site-footer" aria-label="Sidefod">
-  <div class="footer-row">
-    <div class="footer-box"><i class="fa-solid fa-envelope"></i><a href="mailto:lhyhh.chdk@gmail.com"><small>lhyhh.chdk@gmail.com</small></a></div>
-    <div class="footer-box"><i class="fa-solid fa-phone"></i><a href="tel:+4529920782"><small>+45 29 92 07 82</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/photobylh/"><small>photobylh</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com"><small>Lea Hansen</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/feed/"><small>Lea Hansen</small></a></div>
+<footer class="site-footer" aria-label="Sidefod"> <!-- Footer Marker en footer (bundsektion) på siden. / Giver footeren et navn til styling (CSS) eller scripting. / Gør footeren tilgængelig for skærmlæsere; fortæller, at dette område er -->
+  <div class="footer-row"> <!-- Dette er starten på en sektion nederst på siden (footer), som man kan style og fylde med tekst, links eller andet indhold.-->
+    <div class="footer-box"><i class="fa-solid fa-envelope"></i><a href="mailto:lhyhh.chdk@gmail.com"><small>lhyhh.chdk@gmail.com</small></a></div> <!-- Link dirkte til min mail, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-solid fa-phone"></i><a href="tel:+4529920782"><small>+45 29 92 07 82</small></a></div> <!-- Link dirkte til min monil nummer , kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/photobylh/"><small>photobylh</small></a></div> <!-- Link dirkte til min insta, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com"><small>Lea Hansen</small></a></div> <!-- Link dirkte til min Facebook, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/feed/"><small>Lea Hansen</small></a></div> <!-- Link dirkte til min LinkIn, kanppen vriker som et link - og så det hvad der står på knappen -->
   </div>
 </footer>
 
 <!--======================================================FOOTER =======================================================================-->
 
-
+<!-- Så der vises et godkend css logo i bunden -->
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"

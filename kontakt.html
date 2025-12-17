@@ -40,7 +40,7 @@
 <!--======================================================NAVIGATIONS MENU LINJE =======================================================================-->
 
 <div class="flex-overskrift">
-  <h1>Kontakt formular:</h1>
+  <h1>Kontakt formular:</h1> <!-- Min overskift på siden i toppen -->
 </div>
 
 <!--======================================================MAIL FORMULAR BOXSEN =======================================================================-->
@@ -48,27 +48,31 @@
 <!-- HTML: kontaktkort med kvadratisk avatar ved siden af formularen -->
 
 <div class="kontakt">
-  <form action="action_page.php">
+  <form action="action_page.php"> <!-- bruges til at oprette en formular på en webside.-->
 
-    <label for="navn">Navn</label>
-    <input type="text" id="ditnavn" name="ditnavn" placeholder="Dit navn">
 
-    <label for="dinmail">Mail</label>
-    <input type="text" id="dinmail" name="dinmail" placeholder="Din mail">
+    <label for="navn">Navn</label> <!-- Her kan man skive hvad der skal stå over inputfletet -->
+    <input type="text" id="ditnavn" name="ditnavn" placeholder="Dit navn">  <!-- Hvad der står i inputfeltet -->
 
-    <label for="emne">Emne</label>
-    <select id="emne" name="emne">
-      <option value="Reel/video">Reel/video</option>
-      <option value="Billede/produktbillede">Billede/produktbillede</option>
-      <option value="Design/markedsføring">Design/markedeføring</option>
+
+    <label for="dinmail">Mail</label><!-- Her kan man skive hvad der skal stå over inputfletet -->
+    <input type="text" id="dinmail" name="dinmail" placeholder="Din mail"> <!-- Hvad der står i inputfeltet -->
+
+
+    <label for="emne">Emne</label> <!-- Her kan man skive hvad der skal stå over inputfletet -->
+    <select id="emne" name="emne"> <!-- Hvad der står i inputfeltet -->
+      <option value="Reel/video">Reel/video</option> <!-- Et valg i rulle menuen -->
+      <option value="Billede/produktbillede">Billede/produktbillede</option> <!-- Et valg i rulle menuen -->
+      <option value="Design/markedsføring">Design/markedeføring</option> <!-- Et valg i rulle menuen -->
     </select>
 
-    <label for="Besked">Besked</label>
-    <textarea id="Besked" name="Besked" placeholder="Skriv en besked" style="height:200px"></textarea>
 
-    <input type="submit" value="SEND">
+    <label for="Besked">Besked</label> <!-- Her kan man skive hvad der skal stå over inputfletet -->
+    <textarea id="Besked" name="Besked" placeholder="Skriv en besked" style="height:200px"></textarea>  <!-- Hvad der står i inputfeltet og høje og bedten på knappen -->
 
-  </form>
+    <input type="submit" value="SEND"> <!-- Min send knap hvor der står send -->
+
+  </form> <!-- Slut bruges til at oprette en formular på en webside.-->
 </div>
 <!--======================================================MAIL FORMULAR BOXSEN =======================================================================-->
 
@@ -83,18 +87,19 @@
 
 <!--======================================================FOOTER =======================================================================-->
      
-<footer class="site-footer" aria-label="Sidefod">
-  <div class="footer-row">
-    <div class="footer-box"><i class="fa-solid fa-envelope"></i><a href="mailto:lhyhh.chdk@gmail.com"><small>lhyhh.chdk@gmail.com</small></a></div>
-    <div class="footer-box"><i class="fa-solid fa-phone"></i><a href="tel:+4529920782"><small>+45 29 92 07 82</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/photobylh/"><small>photobylh</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com"><small>Lea Hansen</small></a></div>
-    <div class="footer-box"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/feed/"><small>Lea Hansen</small></a></div>
+<footer class="site-footer" aria-label="Sidefod"> <!-- Footer Marker en footer (bundsektion) på siden. / Giver footeren et navn til styling (CSS) eller scripting. / Gør footeren tilgængelig for skærmlæsere; fortæller, at dette område er -->
+  <div class="footer-row"> <!-- Dette er starten på en sektion nederst på siden (footer), som man kan style og fylde med tekst, links eller andet indhold.-->
+    <div class="footer-box"><i class="fa-solid fa-envelope"></i><a href="mailto:lhyhh.chdk@gmail.com"><small>lhyhh.chdk@gmail.com</small></a></div> <!-- Link dirkte til min mail, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-solid fa-phone"></i><a href="tel:+4529920782"><small>+45 29 92 07 82</small></a></div> <!-- Link dirkte til min monil nummer , kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/photobylh/"><small>photobylh</small></a></div> <!-- Link dirkte til min insta, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com"><small>Lea Hansen</small></a></div> <!-- Link dirkte til min Facebook, kanppen vriker som et link - og så det hvad der står på knappen -->
+    <div class="footer-box"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/feed/"><small>Lea Hansen</small></a></div> <!-- Link dirkte til min LinkIn, kanppen vriker som et link - og så det hvad der står på knappen -->
   </div>
 </footer>
 
 <!--======================================================FOOTER =======================================================================-->
 
+<!-- Så der vises et godkend css logo i bunden -->
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
